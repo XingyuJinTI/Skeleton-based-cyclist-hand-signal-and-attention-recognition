@@ -1,0 +1,30 @@
+base_lr: 0.1
+batch_size: 128
+config: config/baseline/kinetics-skeleton/train.yaml
+device: [0]
+eval_interval: 5
+feeder: st_gcn.feeder.Feeder_kinetics
+ignore_weights: []
+log_interval: 100
+model: st_gcn.net.TCN
+model_args: {channel: 108, num_class: 400, use_data_bn: true, window_size: 300}
+nesterov: true
+num_epoch: 60
+num_worker: 128
+optimizer: SGD
+phase: train
+print_log: true
+save_interval: 10
+save_score: false
+seed: 1
+show_topk: [1, 5]
+start_epoch: 0
+step: [10, 60]
+test_batch_size: 128
+test_feeder_args: {data_path: ./data/kinetics-skeleton/kinetics_val, label_path: ./data/kinetics-skeleton/kinetics_val_label.json,
+  mode: test, window_size: 300}
+train_feeder_args: {data_path: ./data/kinetics-skeleton/kinetics_train, label_path: ./data/kinetics-skeleton/kinetics_train_label.json,
+  mode: train, random_choose: true, random_move: true, window_size: 300}
+weight_decay: 0.0001
+weights: null
+work_dir: work_dir/baseline/kinetics

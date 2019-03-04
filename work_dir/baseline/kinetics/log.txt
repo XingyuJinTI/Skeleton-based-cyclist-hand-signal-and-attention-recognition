@@ -1,0 +1,1371 @@
+[ Sat Apr 21 17:55:50 2018 ] Parameters:
+{'work_dir': 'work_dir/baseline/kinetics', 'config': 'config/baseline/kinetics-skeleton/train.yaml', 'phase': 'train', 'save_score': False, 'seed': 1, 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'print_log': True, 'show_topk': [1, 5], 'feeder': 'st_gcn.feeder.Feeder_kinetics', 'num_worker': 128, 'train_feeder_args': {'mode': 'train', 'random_choose': True, 'random_move': True, 'window_size': 300, 'data_path': './data/kinetics-skeleton/kinetics_train', 'label_path': './data/kinetics-skeleton/kinetics_train_label.json'}, 'test_feeder_args': {'mode': 'test', 'window_size': 300, 'data_path': './data/kinetics-skeleton/kinetics_val', 'label_path': './data/kinetics-skeleton/kinetics_val_label.json'}, 'model': 'st_gcn.net.TCN', 'model_args': {'num_class': 400, 'channel': 108, 'window_size': 300, 'use_data_bn': True}, 'weights': None, 'ignore_weights': [], 'base_lr': 0.1, 'step': [10, 60], 'device': [0], 'optimizer': 'SGD', 'nesterov': True, 'batch_size': 128, 'test_batch_size': 128, 'start_epoch': 0, 'num_epoch': 60, 'weight_decay': 0.0001}
+
+[ Sat Apr 21 17:55:50 2018 ] Training epoch: 1
+[ Sat Apr 21 17:57:57 2018 ] 	Batch(0/1879) done. Loss: 6.0117  lr:0.100000
+[ Sat Apr 21 17:58:05 2018 ] 	Batch(100/1879) done. Loss: 5.6845  lr:0.100000
+[ Sat Apr 21 17:58:13 2018 ] 	Batch(200/1879) done. Loss: 5.6180  lr:0.100000
+[ Sat Apr 21 17:59:23 2018 ] 	Batch(300/1879) done. Loss: 5.4519  lr:0.100000
+[ Sat Apr 21 18:00:33 2018 ] 	Batch(400/1879) done. Loss: 5.3654  lr:0.100000
+[ Sat Apr 21 18:01:08 2018 ] 	Batch(500/1879) done. Loss: 5.3243  lr:0.100000
+[ Sat Apr 21 18:02:48 2018 ] 	Batch(600/1879) done. Loss: 5.0530  lr:0.100000
+[ Sat Apr 21 18:03:46 2018 ] 	Batch(700/1879) done. Loss: 5.0324  lr:0.100000
+[ Sat Apr 21 18:05:03 2018 ] 	Batch(800/1879) done. Loss: 4.9640  lr:0.100000
+[ Sat Apr 21 18:05:37 2018 ] 	Batch(900/1879) done. Loss: 5.1665  lr:0.100000
+[ Sat Apr 21 18:07:11 2018 ] 	Batch(1000/1879) done. Loss: 5.0914  lr:0.100000
+[ Sat Apr 21 18:08:38 2018 ] 	Batch(1100/1879) done. Loss: 4.8497  lr:0.100000
+[ Sat Apr 21 18:08:46 2018 ] 	Batch(1200/1879) done. Loss: 5.1262  lr:0.100000
+[ Sat Apr 21 18:10:45 2018 ] 	Batch(1300/1879) done. Loss: 4.9438  lr:0.100000
+[ Sat Apr 21 18:11:19 2018 ] 	Batch(1400/1879) done. Loss: 4.8836  lr:0.100000
+[ Sat Apr 21 18:12:40 2018 ] 	Batch(1500/1879) done. Loss: 4.6966  lr:0.100000
+[ Sat Apr 21 18:13:45 2018 ] 	Batch(1600/1879) done. Loss: 4.7408  lr:0.100000
+[ Sat Apr 21 18:14:51 2018 ] 	Batch(1700/1879) done. Loss: 4.7569  lr:0.100000
+[ Sat Apr 21 18:15:27 2018 ] 	Batch(1800/1879) done. Loss: 4.6792  lr:0.100000
+[ Sat Apr 21 18:15:39 2018 ] 	Mean training loss: 5.0373.
+[ Sat Apr 21 18:15:39 2018 ] 	Time consumption: [Data]56%, [Network]15%
+[ Sat Apr 21 18:15:39 2018 ] Training epoch: 2
+[ Sat Apr 21 18:16:32 2018 ] 	Batch(0/1879) done. Loss: 4.8401  lr:0.100000
+[ Sat Apr 21 18:17:21 2018 ] 	Batch(100/1879) done. Loss: 4.9275  lr:0.100000
+[ Sat Apr 21 18:18:08 2018 ] 	Batch(200/1879) done. Loss: 4.5607  lr:0.100000
+[ Sat Apr 21 18:19:12 2018 ] 	Batch(300/1879) done. Loss: 4.8668  lr:0.100000
+[ Sat Apr 21 18:19:45 2018 ] 	Batch(400/1879) done. Loss: 4.9008  lr:0.100000
+[ Sat Apr 21 18:21:10 2018 ] 	Batch(500/1879) done. Loss: 4.6368  lr:0.100000
+[ Sat Apr 21 18:21:58 2018 ] 	Batch(600/1879) done. Loss: 4.5708  lr:0.100000
+[ Sat Apr 21 18:23:33 2018 ] 	Batch(700/1879) done. Loss: 4.9699  lr:0.100000
+[ Sat Apr 21 18:24:53 2018 ] 	Batch(800/1879) done. Loss: 4.3663  lr:0.100000
+[ Sat Apr 21 18:25:46 2018 ] 	Batch(900/1879) done. Loss: 4.6015  lr:0.100000
+[ Sat Apr 21 18:26:37 2018 ] 	Batch(1000/1879) done. Loss: 4.2912  lr:0.100000
+[ Sat Apr 21 18:28:24 2018 ] 	Batch(1100/1879) done. Loss: 4.6968  lr:0.100000
+[ Sat Apr 21 18:29:05 2018 ] 	Batch(1200/1879) done. Loss: 4.4231  lr:0.100000
+[ Sat Apr 21 18:30:15 2018 ] 	Batch(1300/1879) done. Loss: 4.5475  lr:0.100000
+[ Sat Apr 21 18:31:27 2018 ] 	Batch(1400/1879) done. Loss: 4.4638  lr:0.100000
+[ Sat Apr 21 18:32:24 2018 ] 	Batch(1500/1879) done. Loss: 4.6108  lr:0.100000
+[ Sat Apr 21 18:33:15 2018 ] 	Batch(1600/1879) done. Loss: 4.5359  lr:0.100000
+[ Sat Apr 21 18:34:26 2018 ] 	Batch(1700/1879) done. Loss: 4.7688  lr:0.100000
+[ Sat Apr 21 18:35:08 2018 ] 	Batch(1800/1879) done. Loss: 4.3206  lr:0.100000
+[ Sat Apr 21 18:35:14 2018 ] 	Mean training loss: 4.5827.
+[ Sat Apr 21 18:35:14 2018 ] 	Time consumption: [Data]71%, [Network]11%
+[ Sat Apr 21 18:35:14 2018 ] Training epoch: 3
+[ Sat Apr 21 18:36:05 2018 ] 	Batch(0/1879) done. Loss: 4.5531  lr:0.100000
+[ Sat Apr 21 18:37:20 2018 ] 	Batch(100/1879) done. Loss: 4.4236  lr:0.100000
+[ Sat Apr 21 18:37:28 2018 ] 	Batch(200/1879) done. Loss: 4.7100  lr:0.100000
+[ Sat Apr 21 18:38:55 2018 ] 	Batch(300/1879) done. Loss: 4.5637  lr:0.100000
+[ Sat Apr 21 18:39:57 2018 ] 	Batch(400/1879) done. Loss: 4.4015  lr:0.100000
+[ Sat Apr 21 18:40:23 2018 ] 	Batch(500/1879) done. Loss: 4.3173  lr:0.100000
+[ Sat Apr 21 18:41:33 2018 ] 	Batch(600/1879) done. Loss: 4.5938  lr:0.100000
+[ Sat Apr 21 18:42:45 2018 ] 	Batch(700/1879) done. Loss: 4.3925  lr:0.100000
+[ Sat Apr 21 18:44:33 2018 ] 	Batch(800/1879) done. Loss: 4.4414  lr:0.100000
+[ Sat Apr 21 18:45:08 2018 ] 	Batch(900/1879) done. Loss: 4.3584  lr:0.100000
+[ Sat Apr 21 18:46:01 2018 ] 	Batch(1000/1879) done. Loss: 4.4280  lr:0.100000
+[ Sat Apr 21 18:47:04 2018 ] 	Batch(1100/1879) done. Loss: 4.3357  lr:0.100000
+[ Sat Apr 21 18:48:14 2018 ] 	Batch(1200/1879) done. Loss: 4.7186  lr:0.100000
+[ Sat Apr 21 18:49:22 2018 ] 	Batch(1300/1879) done. Loss: 4.2491  lr:0.100000
+[ Sat Apr 21 18:50:24 2018 ] 	Batch(1400/1879) done. Loss: 4.4961  lr:0.100000
+[ Sat Apr 21 18:51:43 2018 ] 	Batch(1500/1879) done. Loss: 4.4490  lr:0.100000
+[ Sat Apr 21 18:52:51 2018 ] 	Batch(1600/1879) done. Loss: 4.4401  lr:0.100000
+[ Sat Apr 21 18:54:14 2018 ] 	Batch(1700/1879) done. Loss: 4.2299  lr:0.100000
+[ Sat Apr 21 18:54:31 2018 ] 	Batch(1800/1879) done. Loss: 4.3492  lr:0.100000
+[ Sat Apr 21 18:54:37 2018 ] 	Mean training loss: 4.3984.
+[ Sat Apr 21 18:54:37 2018 ] 	Time consumption: [Data]78%, [Network]11%
+[ Sat Apr 21 18:54:37 2018 ] Training epoch: 4
+[ Sat Apr 21 18:55:39 2018 ] 	Batch(0/1879) done. Loss: 4.1432  lr:0.100000
+[ Sat Apr 21 18:56:13 2018 ] 	Batch(100/1879) done. Loss: 4.4317  lr:0.100000
+[ Sat Apr 21 18:57:21 2018 ] 	Batch(200/1879) done. Loss: 4.2367  lr:0.100000
+[ Sat Apr 21 18:57:52 2018 ] 	Batch(300/1879) done. Loss: 4.4650  lr:0.100000
+[ Sat Apr 21 18:59:14 2018 ] 	Batch(400/1879) done. Loss: 4.2098  lr:0.100000
+[ Sat Apr 21 19:00:04 2018 ] 	Batch(500/1879) done. Loss: 4.1894  lr:0.100000
+[ Sat Apr 21 19:00:57 2018 ] 	Batch(600/1879) done. Loss: 4.2131  lr:0.100000
+[ Sat Apr 21 19:02:15 2018 ] 	Batch(700/1879) done. Loss: 4.1239  lr:0.100000
+[ Sat Apr 21 19:03:28 2018 ] 	Batch(800/1879) done. Loss: 4.0404  lr:0.100000
+[ Sat Apr 21 19:04:22 2018 ] 	Batch(900/1879) done. Loss: 4.2288  lr:0.100000
+[ Sat Apr 21 19:05:29 2018 ] 	Batch(1000/1879) done. Loss: 4.1829  lr:0.100000
+[ Sat Apr 21 19:06:42 2018 ] 	Batch(1100/1879) done. Loss: 4.0701  lr:0.100000
+[ Sat Apr 21 19:07:54 2018 ] 	Batch(1200/1879) done. Loss: 4.5059  lr:0.100000
+[ Sat Apr 21 19:08:56 2018 ] 	Batch(1300/1879) done. Loss: 4.1917  lr:0.100000
+[ Sat Apr 21 19:10:07 2018 ] 	Batch(1400/1879) done. Loss: 4.4152  lr:0.100000
+[ Sat Apr 21 19:11:17 2018 ] 	Batch(1500/1879) done. Loss: 4.2032  lr:0.100000
+[ Sat Apr 21 19:12:28 2018 ] 	Batch(1600/1879) done. Loss: 3.9933  lr:0.100000
+[ Sat Apr 21 19:13:37 2018 ] 	Batch(1700/1879) done. Loss: 4.1083  lr:0.100000
+[ Sat Apr 21 19:13:45 2018 ] 	Batch(1800/1879) done. Loss: 4.1805  lr:0.100000
+[ Sat Apr 21 19:13:51 2018 ] 	Mean training loss: 4.2765.
+[ Sat Apr 21 19:13:51 2018 ] 	Time consumption: [Data]75%, [Network]11%
+[ Sat Apr 21 19:13:51 2018 ] Training epoch: 5
+[ Sat Apr 21 19:14:57 2018 ] 	Batch(0/1879) done. Loss: 4.0247  lr:0.100000
+[ Sat Apr 21 19:15:27 2018 ] 	Batch(100/1879) done. Loss: 4.6324  lr:0.100000
+[ Sat Apr 21 19:16:22 2018 ] 	Batch(200/1879) done. Loss: 4.2554  lr:0.100000
+[ Sat Apr 21 19:17:18 2018 ] 	Batch(300/1879) done. Loss: 4.1968  lr:0.100000
+[ Sat Apr 21 19:18:18 2018 ] 	Batch(400/1879) done. Loss: 4.0910  lr:0.100000
+[ Sat Apr 21 19:19:12 2018 ] 	Batch(500/1879) done. Loss: 4.2124  lr:0.100000
+[ Sat Apr 21 19:20:22 2018 ] 	Batch(600/1879) done. Loss: 4.3061  lr:0.100000
+[ Sat Apr 21 19:21:35 2018 ] 	Batch(700/1879) done. Loss: 4.2071  lr:0.100000
+[ Sat Apr 21 19:22:31 2018 ] 	Batch(800/1879) done. Loss: 4.0764  lr:0.100000
+[ Sat Apr 21 19:23:26 2018 ] 	Batch(900/1879) done. Loss: 4.2449  lr:0.100000
+[ Sat Apr 21 19:24:23 2018 ] 	Batch(1000/1879) done. Loss: 4.3368  lr:0.100000
+[ Sat Apr 21 19:25:36 2018 ] 	Batch(1100/1879) done. Loss: 4.0881  lr:0.100000
+[ Sat Apr 21 19:27:05 2018 ] 	Batch(1200/1879) done. Loss: 4.3669  lr:0.100000
+[ Sat Apr 21 19:28:19 2018 ] 	Batch(1300/1879) done. Loss: 4.0150  lr:0.100000
+[ Sat Apr 21 19:28:34 2018 ] 	Batch(1400/1879) done. Loss: 4.0918  lr:0.100000
+[ Sat Apr 21 19:30:08 2018 ] 	Batch(1500/1879) done. Loss: 4.1504  lr:0.100000
+[ Sat Apr 21 19:31:05 2018 ] 	Batch(1600/1879) done. Loss: 4.2017  lr:0.100000
+[ Sat Apr 21 19:31:51 2018 ] 	Batch(1700/1879) done. Loss: 4.2360  lr:0.100000
+[ Sat Apr 21 19:32:48 2018 ] 	Batch(1800/1879) done. Loss: 3.9028  lr:0.100000
+[ Sat Apr 21 19:32:55 2018 ] 	Mean training loss: 4.1827.
+[ Sat Apr 21 19:32:55 2018 ] 	Time consumption: [Data]74%, [Network]11%
+[ Sat Apr 21 19:32:55 2018 ] Eval epoch: 5
+[ Sat Apr 21 19:34:20 2018 ] 	Mean test loss of 155 batches: 4.361998836455807.
+[ Sat Apr 21 19:34:21 2018 ] 	Top1: 12.24%
+[ Sat Apr 21 19:34:21 2018 ] 	Top5: 30.34%
+[ Sat Apr 21 19:34:21 2018 ] Training epoch: 6
+[ Sat Apr 21 19:35:32 2018 ] 	Batch(0/1879) done. Loss: 4.0604  lr:0.100000
+[ Sat Apr 21 19:36:09 2018 ] 	Batch(100/1879) done. Loss: 3.9059  lr:0.100000
+[ Sat Apr 21 19:37:36 2018 ] 	Batch(200/1879) done. Loss: 4.0166  lr:0.100000
+[ Sat Apr 21 19:38:13 2018 ] 	Batch(300/1879) done. Loss: 3.9790  lr:0.100000
+[ Sat Apr 21 19:39:24 2018 ] 	Batch(400/1879) done. Loss: 3.9909  lr:0.100000
+[ Sat Apr 21 19:40:15 2018 ] 	Batch(500/1879) done. Loss: 4.3606  lr:0.100000
+[ Sat Apr 21 19:41:28 2018 ] 	Batch(600/1879) done. Loss: 4.0760  lr:0.100000
+[ Sat Apr 21 19:42:48 2018 ] 	Batch(700/1879) done. Loss: 4.3337  lr:0.100000
+[ Sat Apr 21 19:43:46 2018 ] 	Batch(800/1879) done. Loss: 3.9383  lr:0.100000
+[ Sat Apr 21 19:44:43 2018 ] 	Batch(900/1879) done. Loss: 4.2127  lr:0.100000
+[ Sat Apr 21 19:45:53 2018 ] 	Batch(1000/1879) done. Loss: 3.8029  lr:0.100000
+[ Sat Apr 21 19:47:05 2018 ] 	Batch(1100/1879) done. Loss: 4.1947  lr:0.100000
+[ Sat Apr 21 19:48:13 2018 ] 	Batch(1200/1879) done. Loss: 4.0489  lr:0.100000
+[ Sat Apr 21 19:49:36 2018 ] 	Batch(1300/1879) done. Loss: 4.2329  lr:0.100000
+[ Sat Apr 21 19:50:20 2018 ] 	Batch(1400/1879) done. Loss: 4.3876  lr:0.100000
+[ Sat Apr 21 19:51:19 2018 ] 	Batch(1500/1879) done. Loss: 4.3284  lr:0.100000
+[ Sat Apr 21 19:52:20 2018 ] 	Batch(1600/1879) done. Loss: 4.1926  lr:0.100000
+[ Sat Apr 21 19:53:36 2018 ] 	Batch(1700/1879) done. Loss: 4.1387  lr:0.100000
+[ Sat Apr 21 19:54:10 2018 ] 	Batch(1800/1879) done. Loss: 3.9047  lr:0.100000
+[ Sat Apr 21 19:54:20 2018 ] 	Mean training loss: 4.1138.
+[ Sat Apr 21 19:54:20 2018 ] 	Time consumption: [Data]82%, [Network]10%
+[ Sat Apr 21 19:54:20 2018 ] Training epoch: 7
+[ Sat Apr 21 19:55:39 2018 ] 	Batch(0/1879) done. Loss: 4.1163  lr:0.100000
+[ Sat Apr 21 19:56:08 2018 ] 	Batch(100/1879) done. Loss: 4.1285  lr:0.100000
+[ Sat Apr 21 19:57:26 2018 ] 	Batch(200/1879) done. Loss: 4.0741  lr:0.100000
+[ Sat Apr 21 19:57:40 2018 ] 	Batch(300/1879) done. Loss: 4.0940  lr:0.100000
+[ Sat Apr 21 19:59:06 2018 ] 	Batch(400/1879) done. Loss: 3.9901  lr:0.100000
+[ Sat Apr 21 20:00:34 2018 ] 	Batch(500/1879) done. Loss: 4.0176  lr:0.100000
+[ Sat Apr 21 20:01:10 2018 ] 	Batch(600/1879) done. Loss: 4.0879  lr:0.100000
+[ Sat Apr 21 20:02:20 2018 ] 	Batch(700/1879) done. Loss: 3.9137  lr:0.100000
+[ Sat Apr 21 20:03:07 2018 ] 	Batch(800/1879) done. Loss: 4.1086  lr:0.100000
+[ Sat Apr 21 20:04:39 2018 ] 	Batch(900/1879) done. Loss: 4.1194  lr:0.100000
+[ Sat Apr 21 20:05:28 2018 ] 	Batch(1000/1879) done. Loss: 4.0901  lr:0.100000
+[ Sat Apr 21 20:06:11 2018 ] 	Batch(1100/1879) done. Loss: 4.1302  lr:0.100000
+[ Sat Apr 21 20:07:58 2018 ] 	Batch(1200/1879) done. Loss: 3.9635  lr:0.100000
+[ Sat Apr 21 20:08:32 2018 ] 	Batch(1300/1879) done. Loss: 3.9801  lr:0.100000
+[ Sat Apr 21 20:10:08 2018 ] 	Batch(1400/1879) done. Loss: 4.0453  lr:0.100000
+[ Sat Apr 21 20:10:43 2018 ] 	Batch(1500/1879) done. Loss: 3.9066  lr:0.100000
+[ Sat Apr 21 20:12:03 2018 ] 	Batch(1600/1879) done. Loss: 4.2200  lr:0.100000
+[ Sat Apr 21 20:12:57 2018 ] 	Batch(1700/1879) done. Loss: 3.6573  lr:0.100000
+[ Sat Apr 21 20:13:40 2018 ] 	Batch(1800/1879) done. Loss: 4.1144  lr:0.100000
+[ Sat Apr 21 20:13:46 2018 ] 	Mean training loss: 4.0582.
+[ Sat Apr 21 20:13:46 2018 ] 	Time consumption: [Data]73%, [Network]11%
+[ Sat Apr 21 20:13:46 2018 ] Training epoch: 8
+[ Sat Apr 21 20:14:43 2018 ] 	Batch(0/1879) done. Loss: 4.0329  lr:0.100000
+[ Sat Apr 21 20:15:55 2018 ] 	Batch(100/1879) done. Loss: 4.1233  lr:0.100000
+[ Sat Apr 21 20:16:18 2018 ] 	Batch(200/1879) done. Loss: 3.7807  lr:0.100000
+[ Sat Apr 21 20:17:25 2018 ] 	Batch(300/1879) done. Loss: 3.9240  lr:0.100000
+[ Sat Apr 21 20:18:34 2018 ] 	Batch(400/1879) done. Loss: 4.0067  lr:0.100000
+[ Sat Apr 21 20:19:13 2018 ] 	Batch(500/1879) done. Loss: 4.2500  lr:0.100000
+[ Sat Apr 21 20:21:27 2018 ] 	Batch(600/1879) done. Loss: 3.6830  lr:0.100000
+[ Sat Apr 21 20:21:36 2018 ] 	Batch(700/1879) done. Loss: 4.0319  lr:0.100000
+[ Sat Apr 21 20:22:34 2018 ] 	Batch(800/1879) done. Loss: 4.2148  lr:0.100000
+[ Sat Apr 21 20:23:56 2018 ] 	Batch(900/1879) done. Loss: 4.1086  lr:0.100000
+[ Sat Apr 21 20:25:17 2018 ] 	Batch(1000/1879) done. Loss: 3.9659  lr:0.100000
+[ Sat Apr 21 20:26:29 2018 ] 	Batch(1100/1879) done. Loss: 4.1683  lr:0.100000
+[ Sat Apr 21 20:26:36 2018 ] 	Batch(1200/1879) done. Loss: 3.9011  lr:0.100000
+[ Sat Apr 21 20:28:09 2018 ] 	Batch(1300/1879) done. Loss: 3.8559  lr:0.100000
+[ Sat Apr 21 20:29:00 2018 ] 	Batch(1400/1879) done. Loss: 4.1736  lr:0.100000
+[ Sat Apr 21 20:30:04 2018 ] 	Batch(1500/1879) done. Loss: 3.8968  lr:0.100000
+[ Sat Apr 21 20:31:27 2018 ] 	Batch(1600/1879) done. Loss: 4.0067  lr:0.100000
+[ Sat Apr 21 20:32:28 2018 ] 	Batch(1700/1879) done. Loss: 4.1833  lr:0.100000
+[ Sat Apr 21 20:32:56 2018 ] 	Batch(1800/1879) done. Loss: 4.0078  lr:0.100000
+[ Sat Apr 21 20:33:08 2018 ] 	Mean training loss: 4.0155.
+[ Sat Apr 21 20:33:08 2018 ] 	Time consumption: [Data]72%, [Network]11%
+[ Sat Apr 21 20:33:08 2018 ] Training epoch: 9
+[ Sat Apr 21 20:34:06 2018 ] 	Batch(0/1879) done. Loss: 3.8549  lr:0.100000
+[ Sat Apr 21 20:34:52 2018 ] 	Batch(100/1879) done. Loss: 4.2192  lr:0.100000
+[ Sat Apr 21 20:35:47 2018 ] 	Batch(200/1879) done. Loss: 4.1361  lr:0.100000
+[ Sat Apr 21 20:37:06 2018 ] 	Batch(300/1879) done. Loss: 3.9576  lr:0.100000
+[ Sat Apr 21 20:37:36 2018 ] 	Batch(400/1879) done. Loss: 4.0590  lr:0.100000
+[ Sat Apr 21 20:38:35 2018 ] 	Batch(500/1879) done. Loss: 4.1268  lr:0.100000
+[ Sat Apr 21 20:40:34 2018 ] 	Batch(600/1879) done. Loss: 4.2588  lr:0.100000
+[ Sat Apr 21 20:41:16 2018 ] 	Batch(700/1879) done. Loss: 3.9106  lr:0.100000
+[ Sat Apr 21 20:42:14 2018 ] 	Batch(800/1879) done. Loss: 3.6934  lr:0.100000
+[ Sat Apr 21 20:43:16 2018 ] 	Batch(900/1879) done. Loss: 3.8927  lr:0.100000
+[ Sat Apr 21 20:44:25 2018 ] 	Batch(1000/1879) done. Loss: 4.0342  lr:0.100000
+[ Sat Apr 21 20:45:12 2018 ] 	Batch(1100/1879) done. Loss: 4.0056  lr:0.100000
+[ Sat Apr 21 20:46:17 2018 ] 	Batch(1200/1879) done. Loss: 3.9927  lr:0.100000
+[ Sat Apr 21 20:47:59 2018 ] 	Batch(1300/1879) done. Loss: 4.1502  lr:0.100000
+[ Sat Apr 21 20:48:19 2018 ] 	Batch(1400/1879) done. Loss: 4.2641  lr:0.100000
+[ Sat Apr 21 20:49:49 2018 ] 	Batch(1500/1879) done. Loss: 3.9927  lr:0.100000
+[ Sat Apr 21 20:50:45 2018 ] 	Batch(1600/1879) done. Loss: 3.5552  lr:0.100000
+[ Sat Apr 21 20:51:58 2018 ] 	Batch(1700/1879) done. Loss: 3.7989  lr:0.100000
+[ Sat Apr 21 20:52:26 2018 ] 	Batch(1800/1879) done. Loss: 3.7278  lr:0.100000
+[ Sat Apr 21 20:52:32 2018 ] 	Mean training loss: 3.9773.
+[ Sat Apr 21 20:52:32 2018 ] 	Time consumption: [Data]76%, [Network]11%
+[ Sat Apr 21 20:52:32 2018 ] Training epoch: 10
+[ Sat Apr 21 20:53:41 2018 ] 	Batch(0/1879) done. Loss: 3.9695  lr:0.100000
+[ Sat Apr 21 20:54:51 2018 ] 	Batch(100/1879) done. Loss: 3.9141  lr:0.100000
+[ Sat Apr 21 20:54:59 2018 ] 	Batch(200/1879) done. Loss: 4.0723  lr:0.100000
+[ Sat Apr 21 20:56:15 2018 ] 	Batch(300/1879) done. Loss: 4.0451  lr:0.100000
+[ Sat Apr 21 20:57:02 2018 ] 	Batch(400/1879) done. Loss: 4.0929  lr:0.100000
+[ Sat Apr 21 20:57:53 2018 ] 	Batch(500/1879) done. Loss: 4.1042  lr:0.100000
+[ Sat Apr 21 20:59:06 2018 ] 	Batch(600/1879) done. Loss: 4.0123  lr:0.100000
+[ Sat Apr 21 21:00:22 2018 ] 	Batch(700/1879) done. Loss: 3.8953  lr:0.100000
+[ Sat Apr 21 21:01:35 2018 ] 	Batch(800/1879) done. Loss: 3.7698  lr:0.100000
+[ Sat Apr 21 21:02:32 2018 ] 	Batch(900/1879) done. Loss: 3.8734  lr:0.100000
+[ Sat Apr 21 21:03:32 2018 ] 	Batch(1000/1879) done. Loss: 4.0470  lr:0.100000
+[ Sat Apr 21 21:04:31 2018 ] 	Batch(1100/1879) done. Loss: 3.8727  lr:0.100000
+[ Sat Apr 21 21:05:38 2018 ] 	Batch(1200/1879) done. Loss: 3.8442  lr:0.100000
+[ Sat Apr 21 21:06:43 2018 ] 	Batch(1300/1879) done. Loss: 3.6740  lr:0.100000
+[ Sat Apr 21 21:08:02 2018 ] 	Batch(1400/1879) done. Loss: 3.9769  lr:0.100000
+[ Sat Apr 21 21:08:55 2018 ] 	Batch(1500/1879) done. Loss: 3.8904  lr:0.100000
+[ Sat Apr 21 21:10:01 2018 ] 	Batch(1600/1879) done. Loss: 4.0654  lr:0.100000
+[ Sat Apr 21 21:11:26 2018 ] 	Batch(1700/1879) done. Loss: 4.1522  lr:0.100000
+[ Sat Apr 21 21:11:43 2018 ] 	Batch(1800/1879) done. Loss: 3.7161  lr:0.100000
+[ Sat Apr 21 21:11:53 2018 ] 	Mean training loss: 3.9478.
+[ Sat Apr 21 21:11:53 2018 ] 	Time consumption: [Data]77%, [Network]11%
+[ Sat Apr 21 21:11:54 2018 ] Eval epoch: 10
+[ Sat Apr 21 21:13:17 2018 ] 	Mean test loss of 155 batches: 4.202682433589812.
+[ Sat Apr 21 21:13:17 2018 ] 	Top1: 15.04%
+[ Sat Apr 21 21:13:18 2018 ] 	Top5: 33.71%
+[ Sat Apr 21 21:13:18 2018 ] Training epoch: 11
+[ Sat Apr 21 21:14:37 2018 ] 	Batch(0/1879) done. Loss: 3.8934  lr:0.010000
+[ Sat Apr 21 21:15:18 2018 ] 	Batch(100/1879) done. Loss: 4.0020  lr:0.010000
+[ Sat Apr 21 21:16:30 2018 ] 	Batch(200/1879) done. Loss: 3.8805  lr:0.010000
+[ Sat Apr 21 21:17:07 2018 ] 	Batch(300/1879) done. Loss: 3.9166  lr:0.010000
+[ Sat Apr 21 21:19:13 2018 ] 	Batch(400/1879) done. Loss: 3.8953  lr:0.010000
+[ Sat Apr 21 21:20:31 2018 ] 	Batch(500/1879) done. Loss: 3.9470  lr:0.010000
+[ Sat Apr 21 21:20:47 2018 ] 	Batch(600/1879) done. Loss: 3.8594  lr:0.010000
+[ Sat Apr 21 21:21:33 2018 ] 	Batch(700/1879) done. Loss: 3.5594  lr:0.010000
+[ Sat Apr 21 21:22:46 2018 ] 	Batch(800/1879) done. Loss: 3.3918  lr:0.010000
+[ Sat Apr 21 21:23:54 2018 ] 	Batch(900/1879) done. Loss: 3.6618  lr:0.010000
+[ Sat Apr 21 21:25:44 2018 ] 	Batch(1000/1879) done. Loss: 3.9577  lr:0.010000
+[ Sat Apr 21 21:26:27 2018 ] 	Batch(1100/1879) done. Loss: 3.6428  lr:0.010000
+[ Sat Apr 21 21:26:49 2018 ] 	Batch(1200/1879) done. Loss: 3.5822  lr:0.010000
+[ Sat Apr 21 21:28:29 2018 ] 	Batch(1300/1879) done. Loss: 3.5454  lr:0.010000
+[ Sat Apr 21 21:29:31 2018 ] 	Batch(1400/1879) done. Loss: 3.5974  lr:0.010000
+[ Sat Apr 21 21:30:35 2018 ] 	Batch(1500/1879) done. Loss: 4.1336  lr:0.010000
+[ Sat Apr 21 21:31:30 2018 ] 	Batch(1600/1879) done. Loss: 3.6993  lr:0.010000
+[ Sat Apr 21 21:33:00 2018 ] 	Batch(1700/1879) done. Loss: 3.9126  lr:0.010000
+[ Sat Apr 21 21:33:07 2018 ] 	Batch(1800/1879) done. Loss: 3.8607  lr:0.010000
+[ Sat Apr 21 21:33:15 2018 ] 	Mean training loss: 3.6822.
+[ Sat Apr 21 21:33:15 2018 ] 	Time consumption: [Data]73%, [Network]10%
+[ Sat Apr 21 21:33:15 2018 ] Training epoch: 12
+[ Sat Apr 21 21:34:13 2018 ] 	Batch(0/1879) done. Loss: 3.8859  lr:0.010000
+[ Sat Apr 21 21:35:05 2018 ] 	Batch(100/1879) done. Loss: 3.7278  lr:0.010000
+[ Sat Apr 21 21:36:08 2018 ] 	Batch(200/1879) done. Loss: 3.5671  lr:0.010000
+[ Sat Apr 21 21:37:09 2018 ] 	Batch(300/1879) done. Loss: 3.3907  lr:0.010000
+[ Sat Apr 21 21:37:28 2018 ] 	Batch(400/1879) done. Loss: 3.6709  lr:0.010000
+[ Sat Apr 21 21:38:48 2018 ] 	Batch(500/1879) done. Loss: 3.5334  lr:0.010000
+[ Sat Apr 21 21:40:09 2018 ] 	Batch(600/1879) done. Loss: 3.2471  lr:0.010000
+[ Sat Apr 21 21:40:55 2018 ] 	Batch(700/1879) done. Loss: 3.7408  lr:0.010000
+[ Sat Apr 21 21:41:52 2018 ] 	Batch(800/1879) done. Loss: 3.5192  lr:0.010000
+[ Sat Apr 21 21:43:19 2018 ] 	Batch(900/1879) done. Loss: 3.7646  lr:0.010000
+[ Sat Apr 21 21:44:26 2018 ] 	Batch(1000/1879) done. Loss: 3.3595  lr:0.010000
+[ Sat Apr 21 21:45:47 2018 ] 	Batch(1100/1879) done. Loss: 3.4574  lr:0.010000
+[ Sat Apr 21 21:46:11 2018 ] 	Batch(1200/1879) done. Loss: 3.7953  lr:0.010000
+[ Sat Apr 21 21:47:52 2018 ] 	Batch(1300/1879) done. Loss: 3.5657  lr:0.010000
+[ Sat Apr 21 21:48:27 2018 ] 	Batch(1400/1879) done. Loss: 3.7324  lr:0.010000
+[ Sat Apr 21 21:49:32 2018 ] 	Batch(1500/1879) done. Loss: 3.6876  lr:0.010000
+[ Sat Apr 21 21:51:14 2018 ] 	Batch(1600/1879) done. Loss: 3.6207  lr:0.010000
+[ Sat Apr 21 21:51:40 2018 ] 	Batch(1700/1879) done. Loss: 3.5181  lr:0.010000
+[ Sat Apr 21 21:52:14 2018 ] 	Batch(1800/1879) done. Loss: 3.8053  lr:0.010000
+[ Sat Apr 21 21:52:21 2018 ] 	Mean training loss: 3.6227.
+[ Sat Apr 21 21:52:21 2018 ] 	Time consumption: [Data]75%, [Network]11%
+[ Sat Apr 21 21:52:21 2018 ] Training epoch: 13
+[ Sat Apr 21 21:53:23 2018 ] 	Batch(0/1879) done. Loss: 3.3722  lr:0.010000
+[ Sat Apr 21 21:54:07 2018 ] 	Batch(100/1879) done. Loss: 3.4730  lr:0.010000
+[ Sat Apr 21 21:54:54 2018 ] 	Batch(200/1879) done. Loss: 3.6284  lr:0.010000
+[ Sat Apr 21 21:55:50 2018 ] 	Batch(300/1879) done. Loss: 3.8260  lr:0.010000
+[ Sat Apr 21 21:57:07 2018 ] 	Batch(400/1879) done. Loss: 3.8588  lr:0.010000
+[ Sat Apr 21 21:57:48 2018 ] 	Batch(500/1879) done. Loss: 3.5853  lr:0.010000
+[ Sat Apr 21 21:59:52 2018 ] 	Batch(600/1879) done. Loss: 3.6174  lr:0.010000
+[ Sat Apr 21 22:00:35 2018 ] 	Batch(700/1879) done. Loss: 3.5798  lr:0.010000
+[ Sat Apr 21 22:00:42 2018 ] 	Batch(800/1879) done. Loss: 3.6943  lr:0.010000
+[ Sat Apr 21 22:03:20 2018 ] 	Batch(900/1879) done. Loss: 3.6045  lr:0.010000
+[ Sat Apr 21 22:03:49 2018 ] 	Batch(1000/1879) done. Loss: 3.6531  lr:0.010000
+[ Sat Apr 21 22:05:09 2018 ] 	Batch(1100/1879) done. Loss: 3.4074  lr:0.010000
+[ Sat Apr 21 22:06:06 2018 ] 	Batch(1200/1879) done. Loss: 3.2631  lr:0.010000
+[ Sat Apr 21 22:07:52 2018 ] 	Batch(1300/1879) done. Loss: 3.5808  lr:0.010000
+[ Sat Apr 21 22:08:17 2018 ] 	Batch(1400/1879) done. Loss: 3.6283  lr:0.010000
+[ Sat Apr 21 22:08:25 2018 ] 	Batch(1500/1879) done. Loss: 3.6945  lr:0.010000
+[ Sat Apr 21 22:11:01 2018 ] 	Batch(1600/1879) done. Loss: 3.3409  lr:0.010000
+[ Sat Apr 21 22:11:18 2018 ] 	Batch(1700/1879) done. Loss: 3.2410  lr:0.010000
+[ Sat Apr 21 22:11:38 2018 ] 	Batch(1800/1879) done. Loss: 3.6412  lr:0.010000
+[ Sat Apr 21 22:11:47 2018 ] 	Mean training loss: 3.5956.
+[ Sat Apr 21 22:11:47 2018 ] 	Time consumption: [Data]79%, [Network]11%
+[ Sat Apr 21 22:11:47 2018 ] Training epoch: 14
+[ Sat Apr 21 22:13:03 2018 ] 	Batch(0/1879) done. Loss: 3.6068  lr:0.010000
+[ Sat Apr 21 22:13:40 2018 ] 	Batch(100/1879) done. Loss: 3.3480  lr:0.010000
+[ Sat Apr 21 22:14:38 2018 ] 	Batch(200/1879) done. Loss: 3.5950  lr:0.010000
+[ Sat Apr 21 22:15:33 2018 ] 	Batch(300/1879) done. Loss: 3.6290  lr:0.010000
+[ Sat Apr 21 22:17:36 2018 ] 	Batch(400/1879) done. Loss: 3.6968  lr:0.010000
+[ Sat Apr 21 22:17:44 2018 ] 	Batch(500/1879) done. Loss: 3.6004  lr:0.010000
+[ Sat Apr 21 22:18:38 2018 ] 	Batch(600/1879) done. Loss: 3.8144  lr:0.010000
+[ Sat Apr 21 22:19:44 2018 ] 	Batch(700/1879) done. Loss: 3.4902  lr:0.010000
+[ Sat Apr 21 22:21:52 2018 ] 	Batch(800/1879) done. Loss: 3.6081  lr:0.010000
+[ Sat Apr 21 22:22:36 2018 ] 	Batch(900/1879) done. Loss: 3.4663  lr:0.010000
+[ Sat Apr 21 22:22:57 2018 ] 	Batch(1000/1879) done. Loss: 3.1481  lr:0.010000
+[ Sat Apr 21 22:24:00 2018 ] 	Batch(1100/1879) done. Loss: 3.6942  lr:0.010000
+[ Sat Apr 21 22:25:22 2018 ] 	Batch(1200/1879) done. Loss: 3.7976  lr:0.010000
+[ Sat Apr 21 22:27:44 2018 ] 	Batch(1300/1879) done. Loss: 3.7525  lr:0.010000
+[ Sat Apr 21 22:28:12 2018 ] 	Batch(1400/1879) done. Loss: 3.5811  lr:0.010000
+[ Sat Apr 21 22:28:20 2018 ] 	Batch(1500/1879) done. Loss: 3.3742  lr:0.010000
+[ Sat Apr 21 22:29:38 2018 ] 	Batch(1600/1879) done. Loss: 3.7715  lr:0.010000
+[ Sat Apr 21 22:30:41 2018 ] 	Batch(1700/1879) done. Loss: 3.6178  lr:0.010000
+[ Sat Apr 21 22:31:29 2018 ] 	Batch(1800/1879) done. Loss: 3.7423  lr:0.010000
+[ Sat Apr 21 22:31:35 2018 ] 	Mean training loss: 3.5784.
+[ Sat Apr 21 22:31:35 2018 ] 	Time consumption: [Data]86%, [Network]11%
+[ Sat Apr 21 22:31:35 2018 ] Training epoch: 15
+[ Sat Apr 21 22:32:29 2018 ] 	Batch(0/1879) done. Loss: 3.4007  lr:0.010000
+[ Sat Apr 21 22:33:54 2018 ] 	Batch(100/1879) done. Loss: 3.3288  lr:0.010000
+[ Sat Apr 21 22:34:01 2018 ] 	Batch(200/1879) done. Loss: 3.3597  lr:0.010000
+[ Sat Apr 21 22:35:12 2018 ] 	Batch(300/1879) done. Loss: 3.6705  lr:0.010000
+[ Sat Apr 21 22:36:07 2018 ] 	Batch(400/1879) done. Loss: 3.5114  lr:0.010000
+[ Sat Apr 21 22:37:06 2018 ] 	Batch(500/1879) done. Loss: 3.3639  lr:0.010000
+[ Sat Apr 21 22:38:35 2018 ] 	Batch(600/1879) done. Loss: 3.5683  lr:0.010000
+[ Sat Apr 21 22:40:03 2018 ] 	Batch(700/1879) done. Loss: 4.0515  lr:0.010000
+[ Sat Apr 21 22:40:18 2018 ] 	Batch(800/1879) done. Loss: 3.4503  lr:0.010000
+[ Sat Apr 21 22:41:31 2018 ] 	Batch(900/1879) done. Loss: 3.5531  lr:0.010000
+[ Sat Apr 21 22:42:42 2018 ] 	Batch(1000/1879) done. Loss: 3.5421  lr:0.010000
+[ Sat Apr 21 22:44:04 2018 ] 	Batch(1100/1879) done. Loss: 3.6167  lr:0.010000
+[ Sat Apr 21 22:44:17 2018 ] 	Batch(1200/1879) done. Loss: 3.5307  lr:0.010000
+[ Sat Apr 21 22:45:50 2018 ] 	Batch(1300/1879) done. Loss: 3.6813  lr:0.010000
+[ Sat Apr 21 22:47:04 2018 ] 	Batch(1400/1879) done. Loss: 3.5248  lr:0.010000
+[ Sat Apr 21 22:48:06 2018 ] 	Batch(1500/1879) done. Loss: 3.5047  lr:0.010000
+[ Sat Apr 21 22:49:22 2018 ] 	Batch(1600/1879) done. Loss: 3.5917  lr:0.010000
+[ Sat Apr 21 22:49:59 2018 ] 	Batch(1700/1879) done. Loss: 3.7782  lr:0.010000
+[ Sat Apr 21 22:50:47 2018 ] 	Batch(1800/1879) done. Loss: 3.7577  lr:0.010000
+[ Sat Apr 21 22:50:53 2018 ] 	Mean training loss: 3.5633.
+[ Sat Apr 21 22:50:53 2018 ] 	Time consumption: [Data]64%, [Network]11%
+[ Sat Apr 21 22:50:53 2018 ] Eval epoch: 15
+[ Sat Apr 21 22:52:17 2018 ] 	Mean test loss of 155 batches: 3.8986462039332235.
+[ Sat Apr 21 22:52:17 2018 ] 	Top1: 19.84%
+[ Sat Apr 21 22:52:18 2018 ] 	Top5: 40.47%
+[ Sat Apr 21 22:52:18 2018 ] Training epoch: 16
+[ Sat Apr 21 22:53:32 2018 ] 	Batch(0/1879) done. Loss: 3.4601  lr:0.010000
+[ Sat Apr 21 22:54:16 2018 ] 	Batch(100/1879) done. Loss: 3.4796  lr:0.010000
+[ Sat Apr 21 22:55:36 2018 ] 	Batch(200/1879) done. Loss: 3.4391  lr:0.010000
+[ Sat Apr 21 22:56:44 2018 ] 	Batch(300/1879) done. Loss: 3.5626  lr:0.010000
+[ Sat Apr 21 22:58:04 2018 ] 	Batch(400/1879) done. Loss: 3.6158  lr:0.010000
+[ Sat Apr 21 22:58:31 2018 ] 	Batch(500/1879) done. Loss: 3.4972  lr:0.010000
+[ Sat Apr 21 23:00:18 2018 ] 	Batch(600/1879) done. Loss: 3.6918  lr:0.010000
+[ Sat Apr 21 23:01:30 2018 ] 	Batch(700/1879) done. Loss: 3.7213  lr:0.010000
+[ Sat Apr 21 23:02:08 2018 ] 	Batch(800/1879) done. Loss: 3.1653  lr:0.010000
+[ Sat Apr 21 23:02:59 2018 ] 	Batch(900/1879) done. Loss: 3.5150  lr:0.010000
+[ Sat Apr 21 23:03:56 2018 ] 	Batch(1000/1879) done. Loss: 3.4270  lr:0.010000
+[ Sat Apr 21 23:05:22 2018 ] 	Batch(1100/1879) done. Loss: 3.4655  lr:0.010000
+[ Sat Apr 21 23:06:07 2018 ] 	Batch(1200/1879) done. Loss: 3.4175  lr:0.010000
+[ Sat Apr 21 23:07:36 2018 ] 	Batch(1300/1879) done. Loss: 3.3218  lr:0.010000
+[ Sat Apr 21 23:08:18 2018 ] 	Batch(1400/1879) done. Loss: 3.5177  lr:0.010000
+[ Sat Apr 21 23:09:32 2018 ] 	Batch(1500/1879) done. Loss: 3.4535  lr:0.010000
+[ Sat Apr 21 23:10:36 2018 ] 	Batch(1600/1879) done. Loss: 3.8805  lr:0.010000
+[ Sat Apr 21 23:11:29 2018 ] 	Batch(1700/1879) done. Loss: 3.3525  lr:0.010000
+[ Sat Apr 21 23:12:13 2018 ] 	Batch(1800/1879) done. Loss: 3.4736  lr:0.010000
+[ Sat Apr 21 23:12:23 2018 ] 	Mean training loss: 3.5486.
+[ Sat Apr 21 23:12:23 2018 ] 	Time consumption: [Data]76%, [Network]10%
+[ Sat Apr 21 23:12:23 2018 ] Training epoch: 17
+[ Sat Apr 21 23:13:41 2018 ] 	Batch(0/1879) done. Loss: 3.3803  lr:0.010000
+[ Sat Apr 21 23:15:06 2018 ] 	Batch(100/1879) done. Loss: 3.5876  lr:0.010000
+[ Sat Apr 21 23:15:13 2018 ] 	Batch(200/1879) done. Loss: 3.6276  lr:0.010000
+[ Sat Apr 21 23:16:27 2018 ] 	Batch(300/1879) done. Loss: 3.5881  lr:0.010000
+[ Sat Apr 21 23:17:49 2018 ] 	Batch(400/1879) done. Loss: 3.3061  lr:0.010000
+[ Sat Apr 21 23:19:29 2018 ] 	Batch(500/1879) done. Loss: 3.5317  lr:0.010000
+[ Sat Apr 21 23:19:37 2018 ] 	Batch(600/1879) done. Loss: 3.5821  lr:0.010000
+[ Sat Apr 21 23:20:58 2018 ] 	Batch(700/1879) done. Loss: 3.3779  lr:0.010000
+[ Sat Apr 21 23:22:19 2018 ] 	Batch(800/1879) done. Loss: 3.6495  lr:0.010000
+[ Sat Apr 21 23:23:08 2018 ] 	Batch(900/1879) done. Loss: 3.4237  lr:0.010000
+[ Sat Apr 21 23:24:00 2018 ] 	Batch(1000/1879) done. Loss: 3.6463  lr:0.010000
+[ Sat Apr 21 23:25:10 2018 ] 	Batch(1100/1879) done. Loss: 3.3831  lr:0.010000
+[ Sat Apr 21 23:26:13 2018 ] 	Batch(1200/1879) done. Loss: 3.2659  lr:0.010000
+[ Sat Apr 21 23:27:28 2018 ] 	Batch(1300/1879) done. Loss: 3.4569  lr:0.010000
+[ Sat Apr 21 23:28:21 2018 ] 	Batch(1400/1879) done. Loss: 3.5884  lr:0.010000
+[ Sat Apr 21 23:29:48 2018 ] 	Batch(1500/1879) done. Loss: 3.5331  lr:0.010000
+[ Sat Apr 21 23:30:42 2018 ] 	Batch(1600/1879) done. Loss: 3.2219  lr:0.010000
+[ Sat Apr 21 23:31:37 2018 ] 	Batch(1700/1879) done. Loss: 3.7734  lr:0.010000
+[ Sat Apr 21 23:32:24 2018 ] 	Batch(1800/1879) done. Loss: 3.4371  lr:0.010000
+[ Sat Apr 21 23:32:32 2018 ] 	Mean training loss: 3.5348.
+[ Sat Apr 21 23:32:32 2018 ] 	Time consumption: [Data]69%, [Network]10%
+[ Sat Apr 21 23:32:32 2018 ] Training epoch: 18
+[ Sat Apr 21 23:33:45 2018 ] 	Batch(0/1879) done. Loss: 3.3684  lr:0.010000
+[ Sat Apr 21 23:34:35 2018 ] 	Batch(100/1879) done. Loss: 3.3056  lr:0.010000
+[ Sat Apr 21 23:35:21 2018 ] 	Batch(200/1879) done. Loss: 3.5277  lr:0.010000
+[ Sat Apr 21 23:36:32 2018 ] 	Batch(300/1879) done. Loss: 3.3693  lr:0.010000
+[ Sat Apr 21 23:38:03 2018 ] 	Batch(400/1879) done. Loss: 3.5776  lr:0.010000
+[ Sat Apr 21 23:39:01 2018 ] 	Batch(500/1879) done. Loss: 3.6846  lr:0.010000
+[ Sat Apr 21 23:40:11 2018 ] 	Batch(600/1879) done. Loss: 3.4983  lr:0.010000
+[ Sat Apr 21 23:40:49 2018 ] 	Batch(700/1879) done. Loss: 3.5100  lr:0.010000
+[ Sat Apr 21 23:41:58 2018 ] 	Batch(800/1879) done. Loss: 3.5556  lr:0.010000
+[ Sat Apr 21 23:42:56 2018 ] 	Batch(900/1879) done. Loss: 3.6443  lr:0.010000
+[ Sat Apr 21 23:44:45 2018 ] 	Batch(1000/1879) done. Loss: 3.5479  lr:0.010000
+[ Sat Apr 21 23:45:35 2018 ] 	Batch(1100/1879) done. Loss: 3.5038  lr:0.010000
+[ Sat Apr 21 23:46:15 2018 ] 	Batch(1200/1879) done. Loss: 3.7932  lr:0.010000
+[ Sat Apr 21 23:47:28 2018 ] 	Batch(1300/1879) done. Loss: 3.5492  lr:0.010000
+[ Sat Apr 21 23:48:24 2018 ] 	Batch(1400/1879) done. Loss: 3.5857  lr:0.010000
+[ Sat Apr 21 23:49:26 2018 ] 	Batch(1500/1879) done. Loss: 3.6512  lr:0.010000
+[ Sat Apr 21 23:50:27 2018 ] 	Batch(1600/1879) done. Loss: 3.6038  lr:0.010000
+[ Sat Apr 21 23:51:28 2018 ] 	Batch(1700/1879) done. Loss: 3.6219  lr:0.010000
+[ Sat Apr 21 23:52:33 2018 ] 	Batch(1800/1879) done. Loss: 3.5352  lr:0.010000
+[ Sat Apr 21 23:52:38 2018 ] 	Mean training loss: 3.5251.
+[ Sat Apr 21 23:52:38 2018 ] 	Time consumption: [Data]76%, [Network]10%
+[ Sat Apr 21 23:52:38 2018 ] Training epoch: 19
+[ Sat Apr 21 23:54:04 2018 ] 	Batch(0/1879) done. Loss: 3.5275  lr:0.010000
+[ Sat Apr 21 23:54:44 2018 ] 	Batch(100/1879) done. Loss: 3.7201  lr:0.010000
+[ Sat Apr 21 23:55:50 2018 ] 	Batch(200/1879) done. Loss: 3.6436  lr:0.010000
+[ Sat Apr 21 23:57:20 2018 ] 	Batch(300/1879) done. Loss: 3.8655  lr:0.010000
+[ Sat Apr 21 23:58:06 2018 ] 	Batch(400/1879) done. Loss: 3.5348  lr:0.010000
+[ Sat Apr 21 23:59:35 2018 ] 	Batch(500/1879) done. Loss: 3.3637  lr:0.010000
+[ Sun Apr 22 00:00:30 2018 ] 	Batch(600/1879) done. Loss: 3.4801  lr:0.010000
+[ Sun Apr 22 00:01:14 2018 ] 	Batch(700/1879) done. Loss: 3.5923  lr:0.010000
+[ Sun Apr 22 00:02:08 2018 ] 	Batch(800/1879) done. Loss: 3.4916  lr:0.010000
+[ Sun Apr 22 00:03:14 2018 ] 	Batch(900/1879) done. Loss: 3.5960  lr:0.010000
+[ Sun Apr 22 00:04:20 2018 ] 	Batch(1000/1879) done. Loss: 3.7358  lr:0.010000
+[ Sun Apr 22 00:05:30 2018 ] 	Batch(1100/1879) done. Loss: 3.4712  lr:0.010000
+[ Sun Apr 22 00:06:27 2018 ] 	Batch(1200/1879) done. Loss: 3.3194  lr:0.010000
+[ Sun Apr 22 00:07:42 2018 ] 	Batch(1300/1879) done. Loss: 3.4849  lr:0.010000
+[ Sun Apr 22 00:08:50 2018 ] 	Batch(1400/1879) done. Loss: 3.6666  lr:0.010000
+[ Sun Apr 22 00:09:37 2018 ] 	Batch(1500/1879) done. Loss: 3.4346  lr:0.010000
+[ Sun Apr 22 00:11:15 2018 ] 	Batch(1600/1879) done. Loss: 3.3629  lr:0.010000
+[ Sun Apr 22 00:11:49 2018 ] 	Batch(1700/1879) done. Loss: 3.6625  lr:0.010000
+[ Sun Apr 22 00:12:34 2018 ] 	Batch(1800/1879) done. Loss: 3.3114  lr:0.010000
+[ Sun Apr 22 00:12:47 2018 ] 	Mean training loss: 3.5130.
+[ Sun Apr 22 00:12:47 2018 ] 	Time consumption: [Data]76%, [Network]10%
+[ Sun Apr 22 00:12:47 2018 ] Training epoch: 20
+[ Sun Apr 22 00:14:01 2018 ] 	Batch(0/1879) done. Loss: 3.5393  lr:0.010000
+[ Sun Apr 22 00:14:38 2018 ] 	Batch(100/1879) done. Loss: 3.4280  lr:0.010000
+[ Sun Apr 22 00:15:37 2018 ] 	Batch(200/1879) done. Loss: 3.3759  lr:0.010000
+[ Sun Apr 22 00:16:57 2018 ] 	Batch(300/1879) done. Loss: 3.5262  lr:0.010000
+[ Sun Apr 22 00:18:03 2018 ] 	Batch(400/1879) done. Loss: 3.9061  lr:0.010000
+[ Sun Apr 22 00:19:26 2018 ] 	Batch(500/1879) done. Loss: 3.4233  lr:0.010000
+[ Sun Apr 22 00:20:34 2018 ] 	Batch(600/1879) done. Loss: 3.5811  lr:0.010000
+[ Sun Apr 22 00:21:12 2018 ] 	Batch(700/1879) done. Loss: 3.5410  lr:0.010000
+[ Sun Apr 22 00:22:28 2018 ] 	Batch(800/1879) done. Loss: 3.7366  lr:0.010000
+[ Sun Apr 22 00:23:38 2018 ] 	Batch(900/1879) done. Loss: 3.8217  lr:0.010000
+[ Sun Apr 22 00:24:33 2018 ] 	Batch(1000/1879) done. Loss: 3.2365  lr:0.010000
+[ Sun Apr 22 00:25:45 2018 ] 	Batch(1100/1879) done. Loss: 3.4482  lr:0.010000
+[ Sun Apr 22 00:26:39 2018 ] 	Batch(1200/1879) done. Loss: 3.5037  lr:0.010000
+[ Sun Apr 22 00:27:40 2018 ] 	Batch(1300/1879) done. Loss: 3.5234  lr:0.010000
+[ Sun Apr 22 00:28:45 2018 ] 	Batch(1400/1879) done. Loss: 3.4719  lr:0.010000
+[ Sun Apr 22 00:30:12 2018 ] 	Batch(1500/1879) done. Loss: 3.6629  lr:0.010000
+[ Sun Apr 22 00:31:15 2018 ] 	Batch(1600/1879) done. Loss: 3.5917  lr:0.010000
+[ Sun Apr 22 00:31:48 2018 ] 	Batch(1700/1879) done. Loss: 3.4257  lr:0.010000
+[ Sun Apr 22 00:32:48 2018 ] 	Batch(1800/1879) done. Loss: 3.4416  lr:0.010000
+[ Sun Apr 22 00:32:59 2018 ] 	Mean training loss: 3.5054.
+[ Sun Apr 22 00:32:59 2018 ] 	Time consumption: [Data]74%, [Network]10%
+[ Sun Apr 22 00:32:59 2018 ] Eval epoch: 20
+[ Sun Apr 22 00:34:21 2018 ] 	Mean test loss of 155 batches: 3.879179210047568.
+[ Sun Apr 22 00:34:22 2018 ] 	Top1: 20.19%
+[ Sun Apr 22 00:34:22 2018 ] 	Top5: 40.62%
+[ Sun Apr 22 00:34:22 2018 ] Training epoch: 21
+[ Sun Apr 22 00:35:36 2018 ] 	Batch(0/1879) done. Loss: 3.6045  lr:0.010000
+[ Sun Apr 22 00:36:29 2018 ] 	Batch(100/1879) done. Loss: 3.4050  lr:0.010000
+[ Sun Apr 22 00:37:37 2018 ] 	Batch(200/1879) done. Loss: 3.4661  lr:0.010000
+[ Sun Apr 22 00:38:33 2018 ] 	Batch(300/1879) done. Loss: 3.3089  lr:0.010000
+[ Sun Apr 22 00:39:36 2018 ] 	Batch(400/1879) done. Loss: 3.8596  lr:0.010000
+[ Sun Apr 22 00:40:42 2018 ] 	Batch(500/1879) done. Loss: 3.3776  lr:0.010000
+[ Sun Apr 22 00:41:43 2018 ] 	Batch(600/1879) done. Loss: 3.5988  lr:0.010000
+[ Sun Apr 22 00:42:34 2018 ] 	Batch(700/1879) done. Loss: 3.7155  lr:0.010000
+[ Sun Apr 22 00:43:54 2018 ] 	Batch(800/1879) done. Loss: 3.3311  lr:0.010000
+[ Sun Apr 22 00:44:45 2018 ] 	Batch(900/1879) done. Loss: 3.4283  lr:0.010000
+[ Sun Apr 22 00:46:02 2018 ] 	Batch(1000/1879) done. Loss: 3.6152  lr:0.010000
+[ Sun Apr 22 00:47:02 2018 ] 	Batch(1100/1879) done. Loss: 3.7880  lr:0.010000
+[ Sun Apr 22 00:47:58 2018 ] 	Batch(1200/1879) done. Loss: 3.1819  lr:0.010000
+[ Sun Apr 22 00:49:05 2018 ] 	Batch(1300/1879) done. Loss: 3.7398  lr:0.010000
+[ Sun Apr 22 00:50:14 2018 ] 	Batch(1400/1879) done. Loss: 3.3507  lr:0.010000
+[ Sun Apr 22 00:51:16 2018 ] 	Batch(1500/1879) done. Loss: 3.8532  lr:0.010000
+[ Sun Apr 22 00:52:20 2018 ] 	Batch(1600/1879) done. Loss: 3.5407  lr:0.010000
+[ Sun Apr 22 00:53:57 2018 ] 	Batch(1700/1879) done. Loss: 3.2324  lr:0.010000
+[ Sun Apr 22 00:54:12 2018 ] 	Batch(1800/1879) done. Loss: 3.3957  lr:0.010000
+[ Sun Apr 22 00:54:17 2018 ] 	Mean training loss: 3.4936.
+[ Sun Apr 22 00:54:17 2018 ] 	Time consumption: [Data]81%, [Network]11%
+[ Sun Apr 22 00:54:17 2018 ] Training epoch: 22
+[ Sun Apr 22 00:55:15 2018 ] 	Batch(0/1879) done. Loss: 3.1578  lr:0.010000
+[ Sun Apr 22 00:56:37 2018 ] 	Batch(100/1879) done. Loss: 3.6449  lr:0.010000
+[ Sun Apr 22 00:56:45 2018 ] 	Batch(200/1879) done. Loss: 3.2148  lr:0.010000
+[ Sun Apr 22 00:58:00 2018 ] 	Batch(300/1879) done. Loss: 3.5935  lr:0.010000
+[ Sun Apr 22 00:58:51 2018 ] 	Batch(400/1879) done. Loss: 3.4232  lr:0.010000
+[ Sun Apr 22 00:59:49 2018 ] 	Batch(500/1879) done. Loss: 3.5668  lr:0.010000
+[ Sun Apr 22 01:01:02 2018 ] 	Batch(600/1879) done. Loss: 3.6005  lr:0.010000
+[ Sun Apr 22 01:01:49 2018 ] 	Batch(700/1879) done. Loss: 3.3800  lr:0.010000
+[ Sun Apr 22 01:03:12 2018 ] 	Batch(800/1879) done. Loss: 3.3692  lr:0.010000
+[ Sun Apr 22 01:04:23 2018 ] 	Batch(900/1879) done. Loss: 3.4663  lr:0.010000
+[ Sun Apr 22 01:05:14 2018 ] 	Batch(1000/1879) done. Loss: 3.2524  lr:0.010000
+[ Sun Apr 22 01:06:11 2018 ] 	Batch(1100/1879) done. Loss: 3.4538  lr:0.010000
+[ Sun Apr 22 01:07:42 2018 ] 	Batch(1200/1879) done. Loss: 3.6665  lr:0.010000
+[ Sun Apr 22 01:08:26 2018 ] 	Batch(1300/1879) done. Loss: 3.3396  lr:0.010000
+[ Sun Apr 22 01:09:43 2018 ] 	Batch(1400/1879) done. Loss: 3.6230  lr:0.010000
+[ Sun Apr 22 01:10:58 2018 ] 	Batch(1500/1879) done. Loss: 3.5621  lr:0.010000
+[ Sun Apr 22 01:11:53 2018 ] 	Batch(1600/1879) done. Loss: 3.4436  lr:0.010000
+[ Sun Apr 22 01:12:45 2018 ] 	Batch(1700/1879) done. Loss: 3.8512  lr:0.010000
+[ Sun Apr 22 01:13:24 2018 ] 	Batch(1800/1879) done. Loss: 3.9729  lr:0.010000
+[ Sun Apr 22 01:13:31 2018 ] 	Mean training loss: 3.4854.
+[ Sun Apr 22 01:13:31 2018 ] 	Time consumption: [Data]63%, [Network]11%
+[ Sun Apr 22 01:13:31 2018 ] Training epoch: 23
+[ Sun Apr 22 01:14:38 2018 ] 	Batch(0/1879) done. Loss: 3.3416  lr:0.010000
+[ Sun Apr 22 01:15:10 2018 ] 	Batch(100/1879) done. Loss: 3.3962  lr:0.010000
+[ Sun Apr 22 01:16:03 2018 ] 	Batch(200/1879) done. Loss: 3.3314  lr:0.010000
+[ Sun Apr 22 01:16:52 2018 ] 	Batch(300/1879) done. Loss: 3.4032  lr:0.010000
+[ Sun Apr 22 01:18:02 2018 ] 	Batch(400/1879) done. Loss: 3.2574  lr:0.010000
+[ Sun Apr 22 01:19:10 2018 ] 	Batch(500/1879) done. Loss: 3.7083  lr:0.010000
+[ Sun Apr 22 01:20:04 2018 ] 	Batch(600/1879) done. Loss: 3.5989  lr:0.010000
+[ Sun Apr 22 01:21:17 2018 ] 	Batch(700/1879) done. Loss: 3.3844  lr:0.010000
+[ Sun Apr 22 01:22:09 2018 ] 	Batch(800/1879) done. Loss: 3.9087  lr:0.010000
+[ Sun Apr 22 01:23:25 2018 ] 	Batch(900/1879) done. Loss: 3.5239  lr:0.010000
+[ Sun Apr 22 01:24:28 2018 ] 	Batch(1000/1879) done. Loss: 3.6156  lr:0.010000
+[ Sun Apr 22 01:25:20 2018 ] 	Batch(1100/1879) done. Loss: 3.5242  lr:0.010000
+[ Sun Apr 22 01:26:32 2018 ] 	Batch(1200/1879) done. Loss: 3.5106  lr:0.010000
+[ Sun Apr 22 01:27:42 2018 ] 	Batch(1300/1879) done. Loss: 3.4268  lr:0.010000
+[ Sun Apr 22 01:29:13 2018 ] 	Batch(1400/1879) done. Loss: 3.5167  lr:0.010000
+[ Sun Apr 22 01:30:09 2018 ] 	Batch(1500/1879) done. Loss: 3.5784  lr:0.010000
+[ Sun Apr 22 01:30:46 2018 ] 	Batch(1600/1879) done. Loss: 3.4218  lr:0.010000
+[ Sun Apr 22 01:31:53 2018 ] 	Batch(1700/1879) done. Loss: 3.6068  lr:0.010000
+[ Sun Apr 22 01:32:49 2018 ] 	Batch(1800/1879) done. Loss: 3.5290  lr:0.010000
+[ Sun Apr 22 01:32:54 2018 ] 	Mean training loss: 3.4791.
+[ Sun Apr 22 01:32:54 2018 ] 	Time consumption: [Data]69%, [Network]11%
+[ Sun Apr 22 01:32:54 2018 ] Training epoch: 24
+[ Sun Apr 22 01:33:43 2018 ] 	Batch(0/1879) done. Loss: 3.4521  lr:0.010000
+[ Sun Apr 22 01:34:38 2018 ] 	Batch(100/1879) done. Loss: 3.4887  lr:0.010000
+[ Sun Apr 22 01:35:38 2018 ] 	Batch(200/1879) done. Loss: 3.6550  lr:0.010000
+[ Sun Apr 22 01:36:20 2018 ] 	Batch(300/1879) done. Loss: 3.3221  lr:0.010000
+[ Sun Apr 22 01:37:39 2018 ] 	Batch(400/1879) done. Loss: 3.6310  lr:0.010000
+[ Sun Apr 22 01:38:18 2018 ] 	Batch(500/1879) done. Loss: 3.1225  lr:0.010000
+[ Sun Apr 22 01:39:39 2018 ] 	Batch(600/1879) done. Loss: 3.3900  lr:0.010000
+[ Sun Apr 22 01:40:21 2018 ] 	Batch(700/1879) done. Loss: 3.3499  lr:0.010000
+[ Sun Apr 22 01:41:46 2018 ] 	Batch(800/1879) done. Loss: 3.3793  lr:0.010000
+[ Sun Apr 22 01:42:58 2018 ] 	Batch(900/1879) done. Loss: 3.3813  lr:0.010000
+[ Sun Apr 22 01:43:43 2018 ] 	Batch(1000/1879) done. Loss: 3.3656  lr:0.010000
+[ Sun Apr 22 01:44:49 2018 ] 	Batch(1100/1879) done. Loss: 3.5822  lr:0.010000
+[ Sun Apr 22 01:46:23 2018 ] 	Batch(1200/1879) done. Loss: 3.6569  lr:0.010000
+[ Sun Apr 22 01:47:15 2018 ] 	Batch(1300/1879) done. Loss: 3.4627  lr:0.010000
+[ Sun Apr 22 01:48:24 2018 ] 	Batch(1400/1879) done. Loss: 3.3470  lr:0.010000
+[ Sun Apr 22 01:49:30 2018 ] 	Batch(1500/1879) done. Loss: 3.4888  lr:0.010000
+[ Sun Apr 22 01:50:41 2018 ] 	Batch(1600/1879) done. Loss: 3.3997  lr:0.010000
+[ Sun Apr 22 01:51:29 2018 ] 	Batch(1700/1879) done. Loss: 3.4749  lr:0.010000
+[ Sun Apr 22 01:52:05 2018 ] 	Batch(1800/1879) done. Loss: 3.5257  lr:0.010000
+[ Sun Apr 22 01:52:11 2018 ] 	Mean training loss: 3.4692.
+[ Sun Apr 22 01:52:11 2018 ] 	Time consumption: [Data]75%, [Network]11%
+[ Sun Apr 22 01:52:11 2018 ] Training epoch: 25
+[ Sun Apr 22 01:53:09 2018 ] 	Batch(0/1879) done. Loss: 3.4506  lr:0.010000
+[ Sun Apr 22 01:53:55 2018 ] 	Batch(100/1879) done. Loss: 3.0822  lr:0.010000
+[ Sun Apr 22 01:54:51 2018 ] 	Batch(200/1879) done. Loss: 3.5073  lr:0.010000
+[ Sun Apr 22 01:55:35 2018 ] 	Batch(300/1879) done. Loss: 3.6995  lr:0.010000
+[ Sun Apr 22 01:57:11 2018 ] 	Batch(400/1879) done. Loss: 3.4852  lr:0.010000
+[ Sun Apr 22 01:57:18 2018 ] 	Batch(500/1879) done. Loss: 3.5565  lr:0.010000
+[ Sun Apr 22 01:58:52 2018 ] 	Batch(600/1879) done. Loss: 3.2860  lr:0.010000
+[ Sun Apr 22 02:00:06 2018 ] 	Batch(700/1879) done. Loss: 3.3783  lr:0.010000
+[ Sun Apr 22 02:00:48 2018 ] 	Batch(800/1879) done. Loss: 3.4589  lr:0.010000
+[ Sun Apr 22 02:02:09 2018 ] 	Batch(900/1879) done. Loss: 3.4664  lr:0.010000
+[ Sun Apr 22 02:03:29 2018 ] 	Batch(1000/1879) done. Loss: 3.4340  lr:0.010000
+[ Sun Apr 22 02:03:58 2018 ] 	Batch(1100/1879) done. Loss: 3.3771  lr:0.010000
+[ Sun Apr 22 02:05:25 2018 ] 	Batch(1200/1879) done. Loss: 3.5002  lr:0.010000
+[ Sun Apr 22 02:06:24 2018 ] 	Batch(1300/1879) done. Loss: 3.5352  lr:0.010000
+[ Sun Apr 22 02:07:27 2018 ] 	Batch(1400/1879) done. Loss: 3.6773  lr:0.010000
+[ Sun Apr 22 02:08:55 2018 ] 	Batch(1500/1879) done. Loss: 3.7246  lr:0.010000
+[ Sun Apr 22 02:09:41 2018 ] 	Batch(1600/1879) done. Loss: 3.2218  lr:0.010000
+[ Sun Apr 22 02:10:53 2018 ] 	Batch(1700/1879) done. Loss: 3.4545  lr:0.010000
+[ Sun Apr 22 02:11:24 2018 ] 	Batch(1800/1879) done. Loss: 3.6144  lr:0.010000
+[ Sun Apr 22 02:11:29 2018 ] 	Mean training loss: 3.4620.
+[ Sun Apr 22 02:11:29 2018 ] 	Time consumption: [Data]72%, [Network]11%
+[ Sun Apr 22 02:11:29 2018 ] Eval epoch: 25
+[ Sun Apr 22 02:12:54 2018 ] 	Mean test loss of 155 batches: 3.851479313450475.
+[ Sun Apr 22 02:12:55 2018 ] 	Top1: 20.77%
+[ Sun Apr 22 02:12:55 2018 ] 	Top5: 41.37%
+[ Sun Apr 22 02:12:55 2018 ] Training epoch: 26
+[ Sun Apr 22 02:14:06 2018 ] 	Batch(0/1879) done. Loss: 3.7445  lr:0.010000
+[ Sun Apr 22 02:14:48 2018 ] 	Batch(100/1879) done. Loss: 3.5449  lr:0.010000
+[ Sun Apr 22 02:16:07 2018 ] 	Batch(200/1879) done. Loss: 3.7251  lr:0.010000
+[ Sun Apr 22 02:17:07 2018 ] 	Batch(300/1879) done. Loss: 3.3764  lr:0.010000
+[ Sun Apr 22 02:17:58 2018 ] 	Batch(400/1879) done. Loss: 3.3960  lr:0.010000
+[ Sun Apr 22 02:19:33 2018 ] 	Batch(500/1879) done. Loss: 3.4565  lr:0.010000
+[ Sun Apr 22 02:20:17 2018 ] 	Batch(600/1879) done. Loss: 3.5154  lr:0.010000
+[ Sun Apr 22 02:21:08 2018 ] 	Batch(700/1879) done. Loss: 3.4030  lr:0.010000
+[ Sun Apr 22 02:22:49 2018 ] 	Batch(800/1879) done. Loss: 3.4502  lr:0.010000
+[ Sun Apr 22 02:23:52 2018 ] 	Batch(900/1879) done. Loss: 3.7421  lr:0.010000
+[ Sun Apr 22 02:24:17 2018 ] 	Batch(1000/1879) done. Loss: 3.1068  lr:0.010000
+[ Sun Apr 22 02:25:55 2018 ] 	Batch(1100/1879) done. Loss: 3.5739  lr:0.010000
+[ Sun Apr 22 02:26:33 2018 ] 	Batch(1200/1879) done. Loss: 3.3482  lr:0.010000
+[ Sun Apr 22 02:27:43 2018 ] 	Batch(1300/1879) done. Loss: 3.5893  lr:0.010000
+[ Sun Apr 22 02:28:45 2018 ] 	Batch(1400/1879) done. Loss: 3.4970  lr:0.010000
+[ Sun Apr 22 02:30:09 2018 ] 	Batch(1500/1879) done. Loss: 3.5190  lr:0.010000
+[ Sun Apr 22 02:31:04 2018 ] 	Batch(1600/1879) done. Loss: 3.6599  lr:0.010000
+[ Sun Apr 22 02:32:04 2018 ] 	Batch(1700/1879) done. Loss: 3.7022  lr:0.010000
+[ Sun Apr 22 02:32:45 2018 ] 	Batch(1800/1879) done. Loss: 3.5137  lr:0.010000
+[ Sun Apr 22 02:32:51 2018 ] 	Mean training loss: 3.4563.
+[ Sun Apr 22 02:32:51 2018 ] 	Time consumption: [Data]72%, [Network]10%
+[ Sun Apr 22 02:32:51 2018 ] Training epoch: 27
+[ Sun Apr 22 02:33:45 2018 ] 	Batch(0/1879) done. Loss: 3.5606  lr:0.010000
+[ Sun Apr 22 02:34:32 2018 ] 	Batch(100/1879) done. Loss: 3.4410  lr:0.010000
+[ Sun Apr 22 02:35:51 2018 ] 	Batch(200/1879) done. Loss: 3.4914  lr:0.010000
+[ Sun Apr 22 02:37:06 2018 ] 	Batch(300/1879) done. Loss: 3.4435  lr:0.010000
+[ Sun Apr 22 02:38:02 2018 ] 	Batch(400/1879) done. Loss: 3.1760  lr:0.010000
+[ Sun Apr 22 02:39:18 2018 ] 	Batch(500/1879) done. Loss: 3.4469  lr:0.010000
+[ Sun Apr 22 02:40:06 2018 ] 	Batch(600/1879) done. Loss: 3.9073  lr:0.010000
+[ Sun Apr 22 02:41:18 2018 ] 	Batch(700/1879) done. Loss: 3.2526  lr:0.010000
+[ Sun Apr 22 02:42:27 2018 ] 	Batch(800/1879) done. Loss: 3.3143  lr:0.010000
+[ Sun Apr 22 02:43:55 2018 ] 	Batch(900/1879) done. Loss: 3.2177  lr:0.010000
+[ Sun Apr 22 02:44:02 2018 ] 	Batch(1000/1879) done. Loss: 3.5659  lr:0.010000
+[ Sun Apr 22 02:45:40 2018 ] 	Batch(1100/1879) done. Loss: 3.1885  lr:0.010000
+[ Sun Apr 22 02:46:25 2018 ] 	Batch(1200/1879) done. Loss: 3.7369  lr:0.010000
+[ Sun Apr 22 02:47:54 2018 ] 	Batch(1300/1879) done. Loss: 3.3088  lr:0.010000
+[ Sun Apr 22 02:48:29 2018 ] 	Batch(1400/1879) done. Loss: 3.5503  lr:0.010000
+[ Sun Apr 22 02:49:53 2018 ] 	Batch(1500/1879) done. Loss: 3.6802  lr:0.010000
+[ Sun Apr 22 02:50:43 2018 ] 	Batch(1600/1879) done. Loss: 3.4750  lr:0.010000
+[ Sun Apr 22 02:51:40 2018 ] 	Batch(1700/1879) done. Loss: 3.1294  lr:0.010000
+[ Sun Apr 22 02:52:27 2018 ] 	Batch(1800/1879) done. Loss: 3.5485  lr:0.010000
+[ Sun Apr 22 02:52:40 2018 ] 	Mean training loss: 3.4488.
+[ Sun Apr 22 02:52:40 2018 ] 	Time consumption: [Data]73%, [Network]11%
+[ Sun Apr 22 02:52:40 2018 ] Training epoch: 28
+[ Sun Apr 22 02:53:58 2018 ] 	Batch(0/1879) done. Loss: 3.3205  lr:0.010000
+[ Sun Apr 22 02:54:34 2018 ] 	Batch(100/1879) done. Loss: 3.2306  lr:0.010000
+[ Sun Apr 22 02:55:49 2018 ] 	Batch(200/1879) done. Loss: 3.3706  lr:0.010000
+[ Sun Apr 22 02:56:36 2018 ] 	Batch(300/1879) done. Loss: 3.5978  lr:0.010000
+[ Sun Apr 22 02:57:46 2018 ] 	Batch(400/1879) done. Loss: 3.1451  lr:0.010000
+[ Sun Apr 22 02:58:52 2018 ] 	Batch(500/1879) done. Loss: 3.4699  lr:0.010000
+[ Sun Apr 22 03:00:11 2018 ] 	Batch(600/1879) done. Loss: 3.0769  lr:0.010000
+[ Sun Apr 22 03:01:03 2018 ] 	Batch(700/1879) done. Loss: 3.7273  lr:0.010000
+[ Sun Apr 22 03:02:16 2018 ] 	Batch(800/1879) done. Loss: 3.6093  lr:0.010000
+[ Sun Apr 22 03:03:13 2018 ] 	Batch(900/1879) done. Loss: 3.7781  lr:0.010000
+[ Sun Apr 22 03:04:07 2018 ] 	Batch(1000/1879) done. Loss: 3.2577  lr:0.010000
+[ Sun Apr 22 03:05:15 2018 ] 	Batch(1100/1879) done. Loss: 3.0278  lr:0.010000
+[ Sun Apr 22 03:06:25 2018 ] 	Batch(1200/1879) done. Loss: 3.5163  lr:0.010000
+[ Sun Apr 22 03:07:45 2018 ] 	Batch(1300/1879) done. Loss: 3.5424  lr:0.010000
+[ Sun Apr 22 03:08:24 2018 ] 	Batch(1400/1879) done. Loss: 3.3031  lr:0.010000
+[ Sun Apr 22 03:09:27 2018 ] 	Batch(1500/1879) done. Loss: 3.2850  lr:0.010000
+[ Sun Apr 22 03:10:44 2018 ] 	Batch(1600/1879) done. Loss: 3.3562  lr:0.010000
+[ Sun Apr 22 03:11:46 2018 ] 	Batch(1700/1879) done. Loss: 3.4824  lr:0.010000
+[ Sun Apr 22 03:12:36 2018 ] 	Batch(1800/1879) done. Loss: 3.4562  lr:0.010000
+[ Sun Apr 22 03:12:42 2018 ] 	Mean training loss: 3.4400.
+[ Sun Apr 22 03:12:42 2018 ] 	Time consumption: [Data]75%, [Network]10%
+[ Sun Apr 22 03:12:42 2018 ] Training epoch: 29
+[ Sun Apr 22 03:13:56 2018 ] 	Batch(0/1879) done. Loss: 3.6160  lr:0.010000
+[ Sun Apr 22 03:15:25 2018 ] 	Batch(100/1879) done. Loss: 3.4261  lr:0.010000
+[ Sun Apr 22 03:15:33 2018 ] 	Batch(200/1879) done. Loss: 3.1470  lr:0.010000
+[ Sun Apr 22 03:17:00 2018 ] 	Batch(300/1879) done. Loss: 3.5269  lr:0.010000
+[ Sun Apr 22 03:18:21 2018 ] 	Batch(400/1879) done. Loss: 3.2402  lr:0.010000
+[ Sun Apr 22 03:19:11 2018 ] 	Batch(500/1879) done. Loss: 3.1590  lr:0.010000
+[ Sun Apr 22 03:20:13 2018 ] 	Batch(600/1879) done. Loss: 3.5669  lr:0.010000
+[ Sun Apr 22 03:21:15 2018 ] 	Batch(700/1879) done. Loss: 3.5008  lr:0.010000
+[ Sun Apr 22 03:22:14 2018 ] 	Batch(800/1879) done. Loss: 3.2008  lr:0.010000
+[ Sun Apr 22 03:23:15 2018 ] 	Batch(900/1879) done. Loss: 3.4089  lr:0.010000
+[ Sun Apr 22 03:24:17 2018 ] 	Batch(1000/1879) done. Loss: 3.3978  lr:0.010000
+[ Sun Apr 22 03:25:25 2018 ] 	Batch(1100/1879) done. Loss: 3.6082  lr:0.010000
+[ Sun Apr 22 03:26:45 2018 ] 	Batch(1200/1879) done. Loss: 3.1548  lr:0.010000
+[ Sun Apr 22 03:27:39 2018 ] 	Batch(1300/1879) done. Loss: 3.4652  lr:0.010000
+[ Sun Apr 22 03:28:37 2018 ] 	Batch(1400/1879) done. Loss: 3.3213  lr:0.010000
+[ Sun Apr 22 03:29:47 2018 ] 	Batch(1500/1879) done. Loss: 3.1747  lr:0.010000
+[ Sun Apr 22 03:30:50 2018 ] 	Batch(1600/1879) done. Loss: 3.3138  lr:0.010000
+[ Sun Apr 22 03:31:48 2018 ] 	Batch(1700/1879) done. Loss: 3.5955  lr:0.010000
+[ Sun Apr 22 03:32:35 2018 ] 	Batch(1800/1879) done. Loss: 3.4352  lr:0.010000
+[ Sun Apr 22 03:32:48 2018 ] 	Mean training loss: 3.4348.
+[ Sun Apr 22 03:32:48 2018 ] 	Time consumption: [Data]70%, [Network]10%
+[ Sun Apr 22 03:32:48 2018 ] Training epoch: 30
+[ Sun Apr 22 03:34:00 2018 ] 	Batch(0/1879) done. Loss: 3.1485  lr:0.010000
+[ Sun Apr 22 03:34:36 2018 ] 	Batch(100/1879) done. Loss: 2.9537  lr:0.010000
+[ Sun Apr 22 03:36:02 2018 ] 	Batch(200/1879) done. Loss: 3.4183  lr:0.010000
+[ Sun Apr 22 03:37:02 2018 ] 	Batch(300/1879) done. Loss: 3.2246  lr:0.010000
+[ Sun Apr 22 03:37:55 2018 ] 	Batch(400/1879) done. Loss: 3.4147  lr:0.010000
+[ Sun Apr 22 03:39:20 2018 ] 	Batch(500/1879) done. Loss: 3.2527  lr:0.010000
+[ Sun Apr 22 03:40:12 2018 ] 	Batch(600/1879) done. Loss: 3.3144  lr:0.010000
+[ Sun Apr 22 03:41:09 2018 ] 	Batch(700/1879) done. Loss: 3.2537  lr:0.010000
+[ Sun Apr 22 03:42:19 2018 ] 	Batch(800/1879) done. Loss: 3.4661  lr:0.010000
+[ Sun Apr 22 03:43:42 2018 ] 	Batch(900/1879) done. Loss: 3.4093  lr:0.010000
+[ Sun Apr 22 03:44:54 2018 ] 	Batch(1000/1879) done. Loss: 3.4009  lr:0.010000
+[ Sun Apr 22 03:45:30 2018 ] 	Batch(1100/1879) done. Loss: 3.7802  lr:0.010000
+[ Sun Apr 22 03:47:00 2018 ] 	Batch(1200/1879) done. Loss: 3.8548  lr:0.010000
+[ Sun Apr 22 03:47:44 2018 ] 	Batch(1300/1879) done. Loss: 3.6523  lr:0.010000
+[ Sun Apr 22 03:48:57 2018 ] 	Batch(1400/1879) done. Loss: 3.2042  lr:0.010000
+[ Sun Apr 22 03:50:32 2018 ] 	Batch(1500/1879) done. Loss: 3.7696  lr:0.010000
+[ Sun Apr 22 03:50:39 2018 ] 	Batch(1600/1879) done. Loss: 3.3443  lr:0.010000
+[ Sun Apr 22 03:52:05 2018 ] 	Batch(1700/1879) done. Loss: 3.3393  lr:0.010000
+[ Sun Apr 22 03:52:50 2018 ] 	Batch(1800/1879) done. Loss: 3.3251  lr:0.010000
+[ Sun Apr 22 03:52:56 2018 ] 	Mean training loss: 3.4279.
+[ Sun Apr 22 03:52:56 2018 ] 	Time consumption: [Data]76%, [Network]10%
+[ Sun Apr 22 03:52:56 2018 ] Eval epoch: 30
+[ Sun Apr 22 03:54:20 2018 ] 	Mean test loss of 155 batches: 3.83369988472231.
+[ Sun Apr 22 03:54:20 2018 ] 	Top1: 21.31%
+[ Sun Apr 22 03:54:20 2018 ] 	Top5: 41.79%
+[ Sun Apr 22 03:54:20 2018 ] Training epoch: 31
+[ Sun Apr 22 03:55:53 2018 ] 	Batch(0/1879) done. Loss: 3.0147  lr:0.010000
+[ Sun Apr 22 03:56:24 2018 ] 	Batch(100/1879) done. Loss: 3.4711  lr:0.010000
+[ Sun Apr 22 03:57:34 2018 ] 	Batch(200/1879) done. Loss: 3.7272  lr:0.010000
+[ Sun Apr 22 03:58:25 2018 ] 	Batch(300/1879) done. Loss: 3.4040  lr:0.010000
+[ Sun Apr 22 03:59:50 2018 ] 	Batch(400/1879) done. Loss: 3.1364  lr:0.010000
+[ Sun Apr 22 04:01:14 2018 ] 	Batch(500/1879) done. Loss: 3.3628  lr:0.010000
+[ Sun Apr 22 04:02:09 2018 ] 	Batch(600/1879) done. Loss: 3.3710  lr:0.010000
+[ Sun Apr 22 04:02:56 2018 ] 	Batch(700/1879) done. Loss: 3.1611  lr:0.010000
+[ Sun Apr 22 04:03:51 2018 ] 	Batch(800/1879) done. Loss: 3.3980  lr:0.010000
+[ Sun Apr 22 04:05:00 2018 ] 	Batch(900/1879) done. Loss: 3.1523  lr:0.010000
+[ Sun Apr 22 04:06:00 2018 ] 	Batch(1000/1879) done. Loss: 3.6625  lr:0.010000
+[ Sun Apr 22 04:07:20 2018 ] 	Batch(1100/1879) done. Loss: 3.4617  lr:0.010000
+[ Sun Apr 22 04:08:02 2018 ] 	Batch(1200/1879) done. Loss: 3.3162  lr:0.010000
+[ Sun Apr 22 04:09:09 2018 ] 	Batch(1300/1879) done. Loss: 2.9866  lr:0.010000
+[ Sun Apr 22 04:10:16 2018 ] 	Batch(1400/1879) done. Loss: 3.2573  lr:0.010000
+[ Sun Apr 22 04:11:18 2018 ] 	Batch(1500/1879) done. Loss: 3.5469  lr:0.010000
+[ Sun Apr 22 04:12:27 2018 ] 	Batch(1600/1879) done. Loss: 3.3671  lr:0.010000
+[ Sun Apr 22 04:13:33 2018 ] 	Batch(1700/1879) done. Loss: 3.7274  lr:0.010000
+[ Sun Apr 22 04:14:10 2018 ] 	Batch(1800/1879) done. Loss: 3.7433  lr:0.010000
+[ Sun Apr 22 04:14:23 2018 ] 	Mean training loss: 3.4205.
+[ Sun Apr 22 04:14:23 2018 ] 	Time consumption: [Data]77%, [Network]10%
+[ Sun Apr 22 04:14:23 2018 ] Training epoch: 32
+[ Sun Apr 22 04:15:32 2018 ] 	Batch(0/1879) done. Loss: 3.6798  lr:0.010000
+[ Sun Apr 22 04:16:31 2018 ] 	Batch(100/1879) done. Loss: 3.5029  lr:0.010000
+[ Sun Apr 22 04:17:29 2018 ] 	Batch(200/1879) done. Loss: 3.2249  lr:0.010000
+[ Sun Apr 22 04:18:20 2018 ] 	Batch(300/1879) done. Loss: 3.7237  lr:0.010000
+[ Sun Apr 22 04:19:44 2018 ] 	Batch(400/1879) done. Loss: 3.3948  lr:0.010000
+[ Sun Apr 22 04:21:02 2018 ] 	Batch(500/1879) done. Loss: 3.3287  lr:0.010000
+[ Sun Apr 22 04:22:14 2018 ] 	Batch(600/1879) done. Loss: 3.3135  lr:0.010000
+[ Sun Apr 22 04:23:16 2018 ] 	Batch(700/1879) done. Loss: 3.2488  lr:0.010000
+[ Sun Apr 22 04:24:03 2018 ] 	Batch(800/1879) done. Loss: 3.6903  lr:0.010000
+[ Sun Apr 22 04:24:54 2018 ] 	Batch(900/1879) done. Loss: 3.5860  lr:0.010000
+[ Sun Apr 22 04:25:56 2018 ] 	Batch(1000/1879) done. Loss: 3.3592  lr:0.010000
+[ Sun Apr 22 04:27:00 2018 ] 	Batch(1100/1879) done. Loss: 3.2179  lr:0.010000
+[ Sun Apr 22 04:28:41 2018 ] 	Batch(1200/1879) done. Loss: 3.6723  lr:0.010000
+[ Sun Apr 22 04:29:34 2018 ] 	Batch(1300/1879) done. Loss: 3.3927  lr:0.010000
+[ Sun Apr 22 04:30:15 2018 ] 	Batch(1400/1879) done. Loss: 3.2241  lr:0.010000
+[ Sun Apr 22 04:31:30 2018 ] 	Batch(1500/1879) done. Loss: 3.3392  lr:0.010000
+[ Sun Apr 22 04:33:11 2018 ] 	Batch(1600/1879) done. Loss: 3.1224  lr:0.010000
+[ Sun Apr 22 04:33:18 2018 ] 	Batch(1700/1879) done. Loss: 3.5208  lr:0.010000
+[ Sun Apr 22 04:34:23 2018 ] 	Batch(1800/1879) done. Loss: 3.3002  lr:0.010000
+[ Sun Apr 22 04:34:28 2018 ] 	Mean training loss: 3.4148.
+[ Sun Apr 22 04:34:28 2018 ] 	Time consumption: [Data]70%, [Network]10%
+[ Sun Apr 22 04:34:28 2018 ] Training epoch: 33
+[ Sun Apr 22 04:35:44 2018 ] 	Batch(0/1879) done. Loss: 3.5170  lr:0.010000
+[ Sun Apr 22 04:36:40 2018 ] 	Batch(100/1879) done. Loss: 3.1952  lr:0.010000
+[ Sun Apr 22 04:37:28 2018 ] 	Batch(200/1879) done. Loss: 3.2712  lr:0.010000
+[ Sun Apr 22 04:38:34 2018 ] 	Batch(300/1879) done. Loss: 3.1529  lr:0.010000
+[ Sun Apr 22 04:39:57 2018 ] 	Batch(400/1879) done. Loss: 3.0872  lr:0.010000
+[ Sun Apr 22 04:41:01 2018 ] 	Batch(500/1879) done. Loss: 3.3966  lr:0.010000
+[ Sun Apr 22 04:41:58 2018 ] 	Batch(600/1879) done. Loss: 3.5629  lr:0.010000
+[ Sun Apr 22 04:43:09 2018 ] 	Batch(700/1879) done. Loss: 3.4439  lr:0.010000
+[ Sun Apr 22 04:43:57 2018 ] 	Batch(800/1879) done. Loss: 3.3095  lr:0.010000
+[ Sun Apr 22 04:45:06 2018 ] 	Batch(900/1879) done. Loss: 3.3789  lr:0.010000
+[ Sun Apr 22 04:46:22 2018 ] 	Batch(1000/1879) done. Loss: 3.4036  lr:0.010000
+[ Sun Apr 22 04:47:23 2018 ] 	Batch(1100/1879) done. Loss: 3.4308  lr:0.010000
+[ Sun Apr 22 04:48:20 2018 ] 	Batch(1200/1879) done. Loss: 3.6580  lr:0.010000
+[ Sun Apr 22 04:49:17 2018 ] 	Batch(1300/1879) done. Loss: 3.3080  lr:0.010000
+[ Sun Apr 22 04:50:26 2018 ] 	Batch(1400/1879) done. Loss: 3.4580  lr:0.010000
+[ Sun Apr 22 04:51:21 2018 ] 	Batch(1500/1879) done. Loss: 3.5845  lr:0.010000
+[ Sun Apr 22 04:52:28 2018 ] 	Batch(1600/1879) done. Loss: 3.6339  lr:0.010000
+[ Sun Apr 22 04:53:43 2018 ] 	Batch(1700/1879) done. Loss: 3.2137  lr:0.010000
+[ Sun Apr 22 04:54:13 2018 ] 	Batch(1800/1879) done. Loss: 3.4267  lr:0.010000
+[ Sun Apr 22 04:54:29 2018 ] 	Mean training loss: 3.4084.
+[ Sun Apr 22 04:54:29 2018 ] 	Time consumption: [Data]75%, [Network]10%
+[ Sun Apr 22 04:54:29 2018 ] Training epoch: 34
+[ Sun Apr 22 04:56:00 2018 ] 	Batch(0/1879) done. Loss: 3.4695  lr:0.010000
+[ Sun Apr 22 04:57:09 2018 ] 	Batch(100/1879) done. Loss: 3.4161  lr:0.010000
+[ Sun Apr 22 04:57:17 2018 ] 	Batch(200/1879) done. Loss: 3.6647  lr:0.010000
+[ Sun Apr 22 04:58:35 2018 ] 	Batch(300/1879) done. Loss: 3.4541  lr:0.010000
+[ Sun Apr 22 05:00:17 2018 ] 	Batch(400/1879) done. Loss: 3.5091  lr:0.010000
+[ Sun Apr 22 05:00:51 2018 ] 	Batch(500/1879) done. Loss: 3.4107  lr:0.010000
+[ Sun Apr 22 05:02:12 2018 ] 	Batch(600/1879) done. Loss: 3.3650  lr:0.010000
+[ Sun Apr 22 05:03:04 2018 ] 	Batch(700/1879) done. Loss: 3.2415  lr:0.010000
+[ Sun Apr 22 05:04:02 2018 ] 	Batch(800/1879) done. Loss: 3.6767  lr:0.010000
+[ Sun Apr 22 05:05:09 2018 ] 	Batch(900/1879) done. Loss: 3.1187  lr:0.010000
+[ Sun Apr 22 05:06:29 2018 ] 	Batch(1000/1879) done. Loss: 3.3895  lr:0.010000
+[ Sun Apr 22 05:07:14 2018 ] 	Batch(1100/1879) done. Loss: 3.1690  lr:0.010000
+[ Sun Apr 22 05:08:15 2018 ] 	Batch(1200/1879) done. Loss: 3.2543  lr:0.010000
+[ Sun Apr 22 05:09:19 2018 ] 	Batch(1300/1879) done. Loss: 3.4588  lr:0.010000
+[ Sun Apr 22 05:11:09 2018 ] 	Batch(1400/1879) done. Loss: 3.2870  lr:0.010000
+[ Sun Apr 22 05:11:17 2018 ] 	Batch(1500/1879) done. Loss: 3.3338  lr:0.010000
+[ Sun Apr 22 05:12:47 2018 ] 	Batch(1600/1879) done. Loss: 3.4697  lr:0.010000
+[ Sun Apr 22 05:13:48 2018 ] 	Batch(1700/1879) done. Loss: 3.3060  lr:0.010000
+[ Sun Apr 22 05:14:18 2018 ] 	Batch(1800/1879) done. Loss: 3.3895  lr:0.010000
+[ Sun Apr 22 05:14:33 2018 ] 	Mean training loss: 3.4030.
+[ Sun Apr 22 05:14:33 2018 ] 	Time consumption: [Data]72%, [Network]10%
+[ Sun Apr 22 05:14:33 2018 ] Training epoch: 35
+[ Sun Apr 22 05:15:48 2018 ] 	Batch(0/1879) done. Loss: 3.6166  lr:0.010000
+[ Sun Apr 22 05:16:36 2018 ] 	Batch(100/1879) done. Loss: 3.1816  lr:0.010000
+[ Sun Apr 22 05:17:34 2018 ] 	Batch(200/1879) done. Loss: 3.0453  lr:0.010000
+[ Sun Apr 22 05:18:30 2018 ] 	Batch(300/1879) done. Loss: 3.6179  lr:0.010000
+[ Sun Apr 22 05:19:39 2018 ] 	Batch(400/1879) done. Loss: 3.7197  lr:0.010000
+[ Sun Apr 22 05:21:15 2018 ] 	Batch(500/1879) done. Loss: 3.6976  lr:0.010000
+[ Sun Apr 22 05:22:00 2018 ] 	Batch(600/1879) done. Loss: 3.3882  lr:0.010000
+[ Sun Apr 22 05:23:19 2018 ] 	Batch(700/1879) done. Loss: 3.4690  lr:0.010000
+[ Sun Apr 22 05:24:13 2018 ] 	Batch(800/1879) done. Loss: 3.2756  lr:0.010000
+[ Sun Apr 22 05:25:05 2018 ] 	Batch(900/1879) done. Loss: 3.3307  lr:0.010000
+[ Sun Apr 22 05:26:12 2018 ] 	Batch(1000/1879) done. Loss: 3.4996  lr:0.010000
+[ Sun Apr 22 05:27:24 2018 ] 	Batch(1100/1879) done. Loss: 3.2994  lr:0.010000
+[ Sun Apr 22 05:28:15 2018 ] 	Batch(1200/1879) done. Loss: 3.4785  lr:0.010000
+[ Sun Apr 22 05:29:17 2018 ] 	Batch(1300/1879) done. Loss: 3.2793  lr:0.010000
+[ Sun Apr 22 05:30:24 2018 ] 	Batch(1400/1879) done. Loss: 3.4092  lr:0.010000
+[ Sun Apr 22 05:31:40 2018 ] 	Batch(1500/1879) done. Loss: 3.5091  lr:0.010000
+[ Sun Apr 22 05:32:43 2018 ] 	Batch(1600/1879) done. Loss: 3.5161  lr:0.010000
+[ Sun Apr 22 05:33:35 2018 ] 	Batch(1700/1879) done. Loss: 3.1614  lr:0.010000
+[ Sun Apr 22 05:34:19 2018 ] 	Batch(1800/1879) done. Loss: 3.5559  lr:0.010000
+[ Sun Apr 22 05:34:27 2018 ] 	Mean training loss: 3.3997.
+[ Sun Apr 22 05:34:27 2018 ] 	Time consumption: [Data]75%, [Network]11%
+[ Sun Apr 22 05:34:27 2018 ] Eval epoch: 35
+[ Sun Apr 22 05:35:54 2018 ] 	Mean test loss of 155 batches: 3.8356122616798647.
+[ Sun Apr 22 05:35:55 2018 ] 	Top1: 20.76%
+[ Sun Apr 22 05:35:55 2018 ] 	Top5: 41.88%
+[ Sun Apr 22 05:35:55 2018 ] Training epoch: 36
+[ Sun Apr 22 05:37:17 2018 ] 	Batch(0/1879) done. Loss: 3.2650  lr:0.010000
+[ Sun Apr 22 05:37:57 2018 ] 	Batch(100/1879) done. Loss: 3.4355  lr:0.010000
+[ Sun Apr 22 05:38:53 2018 ] 	Batch(200/1879) done. Loss: 3.1628  lr:0.010000
+[ Sun Apr 22 05:40:00 2018 ] 	Batch(300/1879) done. Loss: 3.1440  lr:0.010000
+[ Sun Apr 22 05:41:12 2018 ] 	Batch(400/1879) done. Loss: 3.1157  lr:0.010000
+[ Sun Apr 22 05:42:27 2018 ] 	Batch(500/1879) done. Loss: 3.5956  lr:0.010000
+[ Sun Apr 22 05:43:35 2018 ] 	Batch(600/1879) done. Loss: 3.3351  lr:0.010000
+[ Sun Apr 22 05:44:40 2018 ] 	Batch(700/1879) done. Loss: 3.5811  lr:0.010000
+[ Sun Apr 22 05:45:17 2018 ] 	Batch(800/1879) done. Loss: 3.4653  lr:0.010000
+[ Sun Apr 22 05:46:25 2018 ] 	Batch(900/1879) done. Loss: 3.3225  lr:0.010000
+[ Sun Apr 22 05:47:53 2018 ] 	Batch(1000/1879) done. Loss: 3.3134  lr:0.010000
+[ Sun Apr 22 05:48:30 2018 ] 	Batch(1100/1879) done. Loss: 3.0458  lr:0.010000
+[ Sun Apr 22 05:49:41 2018 ] 	Batch(1200/1879) done. Loss: 3.7994  lr:0.010000
+[ Sun Apr 22 05:50:55 2018 ] 	Batch(1300/1879) done. Loss: 3.2597  lr:0.010000
+[ Sun Apr 22 05:51:56 2018 ] 	Batch(1400/1879) done. Loss: 3.6838  lr:0.010000
+[ Sun Apr 22 05:52:54 2018 ] 	Batch(1500/1879) done. Loss: 3.3588  lr:0.010000
+[ Sun Apr 22 05:53:59 2018 ] 	Batch(1600/1879) done. Loss: 3.2172  lr:0.010000
+[ Sun Apr 22 05:55:00 2018 ] 	Batch(1700/1879) done. Loss: 3.4681  lr:0.010000
+[ Sun Apr 22 05:55:43 2018 ] 	Batch(1800/1879) done. Loss: 3.2819  lr:0.010000
+[ Sun Apr 22 05:55:57 2018 ] 	Mean training loss: 3.3908.
+[ Sun Apr 22 05:55:57 2018 ] 	Time consumption: [Data]72%, [Network]10%
+[ Sun Apr 22 05:55:57 2018 ] Training epoch: 37
+[ Sun Apr 22 05:57:12 2018 ] 	Batch(0/1879) done. Loss: 3.3053  lr:0.010000
+[ Sun Apr 22 05:57:46 2018 ] 	Batch(100/1879) done. Loss: 3.5234  lr:0.010000
+[ Sun Apr 22 05:59:02 2018 ] 	Batch(200/1879) done. Loss: 3.4915  lr:0.010000
+[ Sun Apr 22 06:00:21 2018 ] 	Batch(300/1879) done. Loss: 3.2811  lr:0.010000
+[ Sun Apr 22 06:00:55 2018 ] 	Batch(400/1879) done. Loss: 3.8171  lr:0.010000
+[ Sun Apr 22 06:02:20 2018 ] 	Batch(500/1879) done. Loss: 3.5334  lr:0.010000
+[ Sun Apr 22 06:03:45 2018 ] 	Batch(600/1879) done. Loss: 3.3690  lr:0.010000
+[ Sun Apr 22 06:04:14 2018 ] 	Batch(700/1879) done. Loss: 3.2523  lr:0.010000
+[ Sun Apr 22 06:05:41 2018 ] 	Batch(800/1879) done. Loss: 3.6832  lr:0.010000
+[ Sun Apr 22 06:06:48 2018 ] 	Batch(900/1879) done. Loss: 3.3018  lr:0.010000
+[ Sun Apr 22 06:07:55 2018 ] 	Batch(1000/1879) done. Loss: 3.4920  lr:0.010000
+[ Sun Apr 22 06:09:12 2018 ] 	Batch(1100/1879) done. Loss: 3.7152  lr:0.010000
+[ Sun Apr 22 06:10:04 2018 ] 	Batch(1200/1879) done. Loss: 3.6177  lr:0.010000
+[ Sun Apr 22 06:10:58 2018 ] 	Batch(1300/1879) done. Loss: 3.5214  lr:0.010000
+[ Sun Apr 22 06:11:53 2018 ] 	Batch(1400/1879) done. Loss: 3.2101  lr:0.010000
+[ Sun Apr 22 06:13:06 2018 ] 	Batch(1500/1879) done. Loss: 3.3788  lr:0.010000
+[ Sun Apr 22 06:14:38 2018 ] 	Batch(1600/1879) done. Loss: 3.5043  lr:0.010000
+[ Sun Apr 22 06:15:34 2018 ] 	Batch(1700/1879) done. Loss: 3.4218  lr:0.010000
+[ Sun Apr 22 06:15:45 2018 ] 	Batch(1800/1879) done. Loss: 3.2777  lr:0.010000
+[ Sun Apr 22 06:15:59 2018 ] 	Mean training loss: 3.3878.
+[ Sun Apr 22 06:15:59 2018 ] 	Time consumption: [Data]69%, [Network]10%
+[ Sun Apr 22 06:15:59 2018 ] Training epoch: 38
+[ Sun Apr 22 06:17:20 2018 ] 	Batch(0/1879) done. Loss: 3.4462  lr:0.010000
+[ Sun Apr 22 06:18:08 2018 ] 	Batch(100/1879) done. Loss: 3.1750  lr:0.010000
+[ Sun Apr 22 06:19:07 2018 ] 	Batch(200/1879) done. Loss: 3.1957  lr:0.010000
+[ Sun Apr 22 06:20:11 2018 ] 	Batch(300/1879) done. Loss: 3.3464  lr:0.010000
+[ Sun Apr 22 06:21:14 2018 ] 	Batch(400/1879) done. Loss: 3.7724  lr:0.010000
+[ Sun Apr 22 06:22:37 2018 ] 	Batch(500/1879) done. Loss: 3.3265  lr:0.010000
+[ Sun Apr 22 06:24:07 2018 ] 	Batch(600/1879) done. Loss: 3.3245  lr:0.010000
+[ Sun Apr 22 06:24:43 2018 ] 	Batch(700/1879) done. Loss: 3.5303  lr:0.010000
+[ Sun Apr 22 06:25:34 2018 ] 	Batch(800/1879) done. Loss: 3.2519  lr:0.010000
+[ Sun Apr 22 06:26:38 2018 ] 	Batch(900/1879) done. Loss: 3.6026  lr:0.010000
+[ Sun Apr 22 06:27:36 2018 ] 	Batch(1000/1879) done. Loss: 3.4418  lr:0.010000
+[ Sun Apr 22 06:28:47 2018 ] 	Batch(1100/1879) done. Loss: 3.6485  lr:0.010000
+[ Sun Apr 22 06:29:58 2018 ] 	Batch(1200/1879) done. Loss: 3.2529  lr:0.010000
+[ Sun Apr 22 06:30:50 2018 ] 	Batch(1300/1879) done. Loss: 3.4248  lr:0.010000
+[ Sun Apr 22 06:32:01 2018 ] 	Batch(1400/1879) done. Loss: 3.4230  lr:0.010000
+[ Sun Apr 22 06:33:02 2018 ] 	Batch(1500/1879) done. Loss: 3.5131  lr:0.010000
+[ Sun Apr 22 06:34:10 2018 ] 	Batch(1600/1879) done. Loss: 3.6752  lr:0.010000
+[ Sun Apr 22 06:35:17 2018 ] 	Batch(1700/1879) done. Loss: 2.9097  lr:0.010000
+[ Sun Apr 22 06:36:00 2018 ] 	Batch(1800/1879) done. Loss: 3.4991  lr:0.010000
+[ Sun Apr 22 06:36:09 2018 ] 	Mean training loss: 3.3842.
+[ Sun Apr 22 06:36:09 2018 ] 	Time consumption: [Data]79%, [Network]10%
+[ Sun Apr 22 06:36:09 2018 ] Training epoch: 39
+[ Sun Apr 22 06:37:27 2018 ] 	Batch(0/1879) done. Loss: 3.1651  lr:0.010000
+[ Sun Apr 22 06:38:18 2018 ] 	Batch(100/1879) done. Loss: 3.4141  lr:0.010000
+[ Sun Apr 22 06:39:06 2018 ] 	Batch(200/1879) done. Loss: 3.4922  lr:0.010000
+[ Sun Apr 22 06:40:12 2018 ] 	Batch(300/1879) done. Loss: 3.1845  lr:0.010000
+[ Sun Apr 22 06:41:32 2018 ] 	Batch(400/1879) done. Loss: 3.2591  lr:0.010000
+[ Sun Apr 22 06:42:20 2018 ] 	Batch(500/1879) done. Loss: 3.4765  lr:0.010000
+[ Sun Apr 22 06:43:44 2018 ] 	Batch(600/1879) done. Loss: 3.4802  lr:0.010000
+[ Sun Apr 22 06:44:45 2018 ] 	Batch(700/1879) done. Loss: 3.5983  lr:0.010000
+[ Sun Apr 22 06:45:39 2018 ] 	Batch(800/1879) done. Loss: 3.7092  lr:0.010000
+[ Sun Apr 22 06:46:43 2018 ] 	Batch(900/1879) done. Loss: 3.4488  lr:0.010000
+[ Sun Apr 22 06:47:45 2018 ] 	Batch(1000/1879) done. Loss: 3.4710  lr:0.010000
+[ Sun Apr 22 06:48:58 2018 ] 	Batch(1100/1879) done. Loss: 3.2299  lr:0.010000
+[ Sun Apr 22 06:49:50 2018 ] 	Batch(1200/1879) done. Loss: 3.2606  lr:0.010000
+[ Sun Apr 22 06:50:56 2018 ] 	Batch(1300/1879) done. Loss: 3.3559  lr:0.010000
+[ Sun Apr 22 06:52:02 2018 ] 	Batch(1400/1879) done. Loss: 3.4884  lr:0.010000
+[ Sun Apr 22 06:53:12 2018 ] 	Batch(1500/1879) done. Loss: 3.4288  lr:0.010000
+[ Sun Apr 22 06:54:07 2018 ] 	Batch(1600/1879) done. Loss: 3.4436  lr:0.010000
+[ Sun Apr 22 06:55:16 2018 ] 	Batch(1700/1879) done. Loss: 3.5402  lr:0.010000
+[ Sun Apr 22 06:56:05 2018 ] 	Batch(1800/1879) done. Loss: 3.5797  lr:0.010000
+[ Sun Apr 22 06:56:13 2018 ] 	Mean training loss: 3.3772.
+[ Sun Apr 22 06:56:13 2018 ] 	Time consumption: [Data]89%, [Network]10%
+[ Sun Apr 22 06:56:13 2018 ] Training epoch: 40
+[ Sun Apr 22 06:57:25 2018 ] 	Batch(0/1879) done. Loss: 3.5534  lr:0.010000
+[ Sun Apr 22 06:58:11 2018 ] 	Batch(100/1879) done. Loss: 3.4091  lr:0.010000
+[ Sun Apr 22 06:59:04 2018 ] 	Batch(200/1879) done. Loss: 3.2421  lr:0.010000
+[ Sun Apr 22 07:00:14 2018 ] 	Batch(300/1879) done. Loss: 3.1885  lr:0.010000
+[ Sun Apr 22 07:01:29 2018 ] 	Batch(400/1879) done. Loss: 3.1737  lr:0.010000
+[ Sun Apr 22 07:02:49 2018 ] 	Batch(500/1879) done. Loss: 3.3745  lr:0.010000
+[ Sun Apr 22 07:04:08 2018 ] 	Batch(600/1879) done. Loss: 3.1161  lr:0.010000
+[ Sun Apr 22 07:04:37 2018 ] 	Batch(700/1879) done. Loss: 3.2542  lr:0.010000
+[ Sun Apr 22 07:05:36 2018 ] 	Batch(800/1879) done. Loss: 3.1727  lr:0.010000
+[ Sun Apr 22 07:06:48 2018 ] 	Batch(900/1879) done. Loss: 3.0246  lr:0.010000
+[ Sun Apr 22 07:07:51 2018 ] 	Batch(1000/1879) done. Loss: 3.4512  lr:0.010000
+[ Sun Apr 22 07:08:57 2018 ] 	Batch(1100/1879) done. Loss: 3.2615  lr:0.010000
+[ Sun Apr 22 07:10:01 2018 ] 	Batch(1200/1879) done. Loss: 3.2781  lr:0.010000
+[ Sun Apr 22 07:11:03 2018 ] 	Batch(1300/1879) done. Loss: 3.5528  lr:0.010000
+[ Sun Apr 22 07:12:18 2018 ] 	Batch(1400/1879) done. Loss: 3.2238  lr:0.010000
+[ Sun Apr 22 07:13:04 2018 ] 	Batch(1500/1879) done. Loss: 3.4795  lr:0.010000
+[ Sun Apr 22 07:14:18 2018 ] 	Batch(1600/1879) done. Loss: 3.0946  lr:0.010000
+[ Sun Apr 22 07:15:13 2018 ] 	Batch(1700/1879) done. Loss: 3.6272  lr:0.010000
+[ Sun Apr 22 07:16:04 2018 ] 	Batch(1800/1879) done. Loss: 2.9916  lr:0.010000
+[ Sun Apr 22 07:16:13 2018 ] 	Mean training loss: 3.3717.
+[ Sun Apr 22 07:16:13 2018 ] 	Time consumption: [Data]84%, [Network]11%
+[ Sun Apr 22 07:16:13 2018 ] Eval epoch: 40
+[ Sun Apr 22 07:17:36 2018 ] 	Mean test loss of 155 batches: 3.8382446042953.
+[ Sun Apr 22 07:17:36 2018 ] 	Top1: 21.25%
+[ Sun Apr 22 07:17:36 2018 ] 	Top5: 41.84%
+[ Sun Apr 22 07:17:36 2018 ] Training epoch: 41
+[ Sun Apr 22 07:18:47 2018 ] 	Batch(0/1879) done. Loss: 3.2616  lr:0.010000
+[ Sun Apr 22 07:19:48 2018 ] 	Batch(100/1879) done. Loss: 3.2130  lr:0.010000
+[ Sun Apr 22 07:20:47 2018 ] 	Batch(200/1879) done. Loss: 3.2916  lr:0.010000
+[ Sun Apr 22 07:22:20 2018 ] 	Batch(300/1879) done. Loss: 3.3035  lr:0.010000
+[ Sun Apr 22 07:23:41 2018 ] 	Batch(400/1879) done. Loss: 3.2498  lr:0.010000
+[ Sun Apr 22 07:23:48 2018 ] 	Batch(500/1879) done. Loss: 3.3953  lr:0.010000
+[ Sun Apr 22 07:25:47 2018 ] 	Batch(600/1879) done. Loss: 3.5827  lr:0.010000
+[ Sun Apr 22 07:26:51 2018 ] 	Batch(700/1879) done. Loss: 3.4558  lr:0.010000
+[ Sun Apr 22 07:26:58 2018 ] 	Batch(800/1879) done. Loss: 3.4461  lr:0.010000
+[ Sun Apr 22 07:28:31 2018 ] 	Batch(900/1879) done. Loss: 3.1851  lr:0.010000
+[ Sun Apr 22 07:29:36 2018 ] 	Batch(1000/1879) done. Loss: 3.1853  lr:0.010000
+[ Sun Apr 22 07:31:15 2018 ] 	Batch(1100/1879) done. Loss: 3.6016  lr:0.010000
+[ Sun Apr 22 07:31:23 2018 ] 	Batch(1200/1879) done. Loss: 3.5863  lr:0.010000
+[ Sun Apr 22 07:32:40 2018 ] 	Batch(1300/1879) done. Loss: 3.4468  lr:0.010000
+[ Sun Apr 22 07:33:57 2018 ] 	Batch(1400/1879) done. Loss: 3.2192  lr:0.010000
+[ Sun Apr 22 07:34:58 2018 ] 	Batch(1500/1879) done. Loss: 3.7310  lr:0.010000
+[ Sun Apr 22 07:35:52 2018 ] 	Batch(1600/1879) done. Loss: 3.1611  lr:0.010000
+[ Sun Apr 22 07:37:17 2018 ] 	Batch(1700/1879) done. Loss: 3.2360  lr:0.010000
+[ Sun Apr 22 07:37:45 2018 ] 	Batch(1800/1879) done. Loss: 3.3379  lr:0.010000
+[ Sun Apr 22 07:37:53 2018 ] 	Mean training loss: 3.3647.
+[ Sun Apr 22 07:37:53 2018 ] 	Time consumption: [Data]60%, [Network]10%
+[ Sun Apr 22 07:37:53 2018 ] Training epoch: 42
+[ Sun Apr 22 07:39:06 2018 ] 	Batch(0/1879) done. Loss: 3.0362  lr:0.010000
+[ Sun Apr 22 07:39:52 2018 ] 	Batch(100/1879) done. Loss: 3.2284  lr:0.010000
+[ Sun Apr 22 07:41:06 2018 ] 	Batch(200/1879) done. Loss: 3.4230  lr:0.010000
+[ Sun Apr 22 07:42:06 2018 ] 	Batch(300/1879) done. Loss: 3.7808  lr:0.010000
+[ Sun Apr 22 07:43:34 2018 ] 	Batch(400/1879) done. Loss: 3.2839  lr:0.010000
+[ Sun Apr 22 07:44:35 2018 ] 	Batch(500/1879) done. Loss: 3.2733  lr:0.010000
+[ Sun Apr 22 07:45:57 2018 ] 	Batch(600/1879) done. Loss: 3.2438  lr:0.010000
+[ Sun Apr 22 07:46:39 2018 ] 	Batch(700/1879) done. Loss: 3.2539  lr:0.010000
+[ Sun Apr 22 07:47:51 2018 ] 	Batch(800/1879) done. Loss: 3.3622  lr:0.010000
+[ Sun Apr 22 07:48:23 2018 ] 	Batch(900/1879) done. Loss: 3.4747  lr:0.010000
+[ Sun Apr 22 07:49:42 2018 ] 	Batch(1000/1879) done. Loss: 3.4881  lr:0.010000
+[ Sun Apr 22 07:50:50 2018 ] 	Batch(1100/1879) done. Loss: 3.1199  lr:0.010000
+[ Sun Apr 22 07:51:58 2018 ] 	Batch(1200/1879) done. Loss: 3.2308  lr:0.010000
+[ Sun Apr 22 07:53:07 2018 ] 	Batch(1300/1879) done. Loss: 3.0888  lr:0.010000
+[ Sun Apr 22 07:54:08 2018 ] 	Batch(1400/1879) done. Loss: 3.6702  lr:0.010000
+[ Sun Apr 22 07:55:10 2018 ] 	Batch(1500/1879) done. Loss: 3.5033  lr:0.010000
+[ Sun Apr 22 07:55:57 2018 ] 	Batch(1600/1879) done. Loss: 3.4095  lr:0.010000
+[ Sun Apr 22 07:57:32 2018 ] 	Batch(1700/1879) done. Loss: 3.4198  lr:0.010000
+[ Sun Apr 22 07:57:42 2018 ] 	Batch(1800/1879) done. Loss: 3.3559  lr:0.010000
+[ Sun Apr 22 07:57:54 2018 ] 	Mean training loss: 3.3630.
+[ Sun Apr 22 07:57:54 2018 ] 	Time consumption: [Data]72%, [Network]10%
+[ Sun Apr 22 07:57:54 2018 ] Training epoch: 43
+[ Sun Apr 22 07:59:17 2018 ] 	Batch(0/1879) done. Loss: 3.2341  lr:0.010000
+[ Sun Apr 22 08:00:00 2018 ] 	Batch(100/1879) done. Loss: 3.1519  lr:0.010000
+[ Sun Apr 22 08:00:55 2018 ] 	Batch(200/1879) done. Loss: 3.2781  lr:0.010000
+[ Sun Apr 22 08:02:06 2018 ] 	Batch(300/1879) done. Loss: 3.5780  lr:0.010000
+[ Sun Apr 22 08:03:10 2018 ] 	Batch(400/1879) done. Loss: 3.3180  lr:0.010000
+[ Sun Apr 22 08:04:19 2018 ] 	Batch(500/1879) done. Loss: 3.0032  lr:0.010000
+[ Sun Apr 22 08:05:36 2018 ] 	Batch(600/1879) done. Loss: 3.2871  lr:0.010000
+[ Sun Apr 22 08:06:39 2018 ] 	Batch(700/1879) done. Loss: 3.1767  lr:0.010000
+[ Sun Apr 22 08:08:02 2018 ] 	Batch(800/1879) done. Loss: 3.3479  lr:0.010000
+[ Sun Apr 22 08:08:15 2018 ] 	Batch(900/1879) done. Loss: 3.1746  lr:0.010000
+[ Sun Apr 22 08:09:55 2018 ] 	Batch(1000/1879) done. Loss: 3.3985  lr:0.010000
+[ Sun Apr 22 08:11:06 2018 ] 	Batch(1100/1879) done. Loss: 3.2974  lr:0.010000
+[ Sun Apr 22 08:11:45 2018 ] 	Batch(1200/1879) done. Loss: 3.1928  lr:0.010000
+[ Sun Apr 22 08:12:41 2018 ] 	Batch(1300/1879) done. Loss: 3.1551  lr:0.010000
+[ Sun Apr 22 08:13:52 2018 ] 	Batch(1400/1879) done. Loss: 3.2351  lr:0.010000
+[ Sun Apr 22 08:15:02 2018 ] 	Batch(1500/1879) done. Loss: 3.3542  lr:0.010000
+[ Sun Apr 22 08:16:22 2018 ] 	Batch(1600/1879) done. Loss: 3.3067  lr:0.010000
+[ Sun Apr 22 08:17:33 2018 ] 	Batch(1700/1879) done. Loss: 2.9974  lr:0.010000
+[ Sun Apr 22 08:17:46 2018 ] 	Batch(1800/1879) done. Loss: 3.5179  lr:0.010000
+[ Sun Apr 22 08:17:56 2018 ] 	Mean training loss: 3.3592.
+[ Sun Apr 22 08:17:56 2018 ] 	Time consumption: [Data]66%, [Network]10%
+[ Sun Apr 22 08:17:56 2018 ] Training epoch: 44
+[ Sun Apr 22 08:19:24 2018 ] 	Batch(0/1879) done. Loss: 3.2687  lr:0.010000
+[ Sun Apr 22 08:19:59 2018 ] 	Batch(100/1879) done. Loss: 3.3821  lr:0.010000
+[ Sun Apr 22 08:21:21 2018 ] 	Batch(200/1879) done. Loss: 3.3138  lr:0.010000
+[ Sun Apr 22 08:22:04 2018 ] 	Batch(300/1879) done. Loss: 3.5926  lr:0.010000
+[ Sun Apr 22 08:23:26 2018 ] 	Batch(400/1879) done. Loss: 3.3369  lr:0.010000
+[ Sun Apr 22 08:24:36 2018 ] 	Batch(500/1879) done. Loss: 3.1223  lr:0.010000
+[ Sun Apr 22 08:25:27 2018 ] 	Batch(600/1879) done. Loss: 3.5912  lr:0.010000
+[ Sun Apr 22 08:26:40 2018 ] 	Batch(700/1879) done. Loss: 3.1681  lr:0.010000
+[ Sun Apr 22 08:27:54 2018 ] 	Batch(800/1879) done. Loss: 3.5269  lr:0.010000
+[ Sun Apr 22 08:28:48 2018 ] 	Batch(900/1879) done. Loss: 3.6384  lr:0.010000
+[ Sun Apr 22 08:29:40 2018 ] 	Batch(1000/1879) done. Loss: 3.0668  lr:0.010000
+[ Sun Apr 22 08:31:01 2018 ] 	Batch(1100/1879) done. Loss: 3.4666  lr:0.010000
+[ Sun Apr 22 08:32:29 2018 ] 	Batch(1200/1879) done. Loss: 3.4779  lr:0.010000
+[ Sun Apr 22 08:33:08 2018 ] 	Batch(1300/1879) done. Loss: 3.2278  lr:0.010000
+[ Sun Apr 22 08:34:28 2018 ] 	Batch(1400/1879) done. Loss: 3.4807  lr:0.010000
+[ Sun Apr 22 08:35:17 2018 ] 	Batch(1500/1879) done. Loss: 3.7681  lr:0.010000
+[ Sun Apr 22 08:36:32 2018 ] 	Batch(1600/1879) done. Loss: 3.4465  lr:0.010000
+[ Sun Apr 22 08:37:02 2018 ] 	Batch(1700/1879) done. Loss: 3.3227  lr:0.010000
+[ Sun Apr 22 08:38:01 2018 ] 	Batch(1800/1879) done. Loss: 3.8087  lr:0.010000
+[ Sun Apr 22 08:38:07 2018 ] 	Mean training loss: 3.3542.
+[ Sun Apr 22 08:38:07 2018 ] 	Time consumption: [Data]72%, [Network]10%
+[ Sun Apr 22 08:38:07 2018 ] Training epoch: 45
+[ Sun Apr 22 08:39:18 2018 ] 	Batch(0/1879) done. Loss: 3.1604  lr:0.010000
+[ Sun Apr 22 08:40:49 2018 ] 	Batch(100/1879) done. Loss: 3.1750  lr:0.010000
+[ Sun Apr 22 08:40:57 2018 ] 	Batch(200/1879) done. Loss: 3.2857  lr:0.010000
+[ Sun Apr 22 08:42:44 2018 ] 	Batch(300/1879) done. Loss: 2.9918  lr:0.010000
+[ Sun Apr 22 08:43:59 2018 ] 	Batch(400/1879) done. Loss: 3.5855  lr:0.010000
+[ Sun Apr 22 08:44:42 2018 ] 	Batch(500/1879) done. Loss: 3.2567  lr:0.010000
+[ Sun Apr 22 08:45:59 2018 ] 	Batch(600/1879) done. Loss: 3.0991  lr:0.010000
+[ Sun Apr 22 08:46:37 2018 ] 	Batch(700/1879) done. Loss: 3.7211  lr:0.010000
+[ Sun Apr 22 08:47:59 2018 ] 	Batch(800/1879) done. Loss: 3.4191  lr:0.010000
+[ Sun Apr 22 08:48:47 2018 ] 	Batch(900/1879) done. Loss: 3.4451  lr:0.010000
+[ Sun Apr 22 08:49:54 2018 ] 	Batch(1000/1879) done. Loss: 3.4529  lr:0.010000
+[ Sun Apr 22 08:51:12 2018 ] 	Batch(1100/1879) done. Loss: 3.2474  lr:0.010000
+[ Sun Apr 22 08:52:24 2018 ] 	Batch(1200/1879) done. Loss: 3.3653  lr:0.010000
+[ Sun Apr 22 08:53:39 2018 ] 	Batch(1300/1879) done. Loss: 3.1340  lr:0.010000
+[ Sun Apr 22 08:54:49 2018 ] 	Batch(1400/1879) done. Loss: 3.4359  lr:0.010000
+[ Sun Apr 22 08:54:57 2018 ] 	Batch(1500/1879) done. Loss: 3.0828  lr:0.010000
+[ Sun Apr 22 08:56:29 2018 ] 	Batch(1600/1879) done. Loss: 3.2469  lr:0.010000
+[ Sun Apr 22 08:57:55 2018 ] 	Batch(1700/1879) done. Loss: 3.7931  lr:0.010000
+[ Sun Apr 22 08:58:09 2018 ] 	Batch(1800/1879) done. Loss: 3.5911  lr:0.010000
+[ Sun Apr 22 08:58:15 2018 ] 	Mean training loss: 3.3500.
+[ Sun Apr 22 08:58:15 2018 ] 	Time consumption: [Data]69%, [Network]10%
+[ Sun Apr 22 08:58:15 2018 ] Eval epoch: 45
+[ Sun Apr 22 08:59:39 2018 ] 	Mean test loss of 155 batches: 3.8175658887432466.
+[ Sun Apr 22 08:59:39 2018 ] 	Top1: 21.77%
+[ Sun Apr 22 08:59:40 2018 ] 	Top5: 41.91%
+[ Sun Apr 22 08:59:40 2018 ] Training epoch: 46
+[ Sun Apr 22 09:00:49 2018 ] 	Batch(0/1879) done. Loss: 3.4147  lr:0.010000
+[ Sun Apr 22 09:01:44 2018 ] 	Batch(100/1879) done. Loss: 3.3282  lr:0.010000
+[ Sun Apr 22 09:02:57 2018 ] 	Batch(200/1879) done. Loss: 3.2872  lr:0.010000
+[ Sun Apr 22 09:03:51 2018 ] 	Batch(300/1879) done. Loss: 3.4004  lr:0.010000
+[ Sun Apr 22 09:05:05 2018 ] 	Batch(400/1879) done. Loss: 3.2805  lr:0.010000
+[ Sun Apr 22 09:06:10 2018 ] 	Batch(500/1879) done. Loss: 3.0148  lr:0.010000
+[ Sun Apr 22 09:08:18 2018 ] 	Batch(600/1879) done. Loss: 3.7156  lr:0.010000
+[ Sun Apr 22 09:08:48 2018 ] 	Batch(700/1879) done. Loss: 3.5057  lr:0.010000
+[ Sun Apr 22 09:09:40 2018 ] 	Batch(800/1879) done. Loss: 3.0924  lr:0.010000
+[ Sun Apr 22 09:11:11 2018 ] 	Batch(900/1879) done. Loss: 3.5888  lr:0.010000
+[ Sun Apr 22 09:12:27 2018 ] 	Batch(1000/1879) done. Loss: 3.4029  lr:0.010000
+[ Sun Apr 22 09:13:09 2018 ] 	Batch(1100/1879) done. Loss: 3.5256  lr:0.010000
+[ Sun Apr 22 09:13:36 2018 ] 	Batch(1200/1879) done. Loss: 3.2464  lr:0.010000
+[ Sun Apr 22 09:15:35 2018 ] 	Batch(1300/1879) done. Loss: 3.5729  lr:0.010000
+[ Sun Apr 22 09:15:43 2018 ] 	Batch(1400/1879) done. Loss: 3.3563  lr:0.010000
+[ Sun Apr 22 09:18:13 2018 ] 	Batch(1500/1879) done. Loss: 3.4549  lr:0.010000
+[ Sun Apr 22 09:18:53 2018 ] 	Batch(1600/1879) done. Loss: 3.4822  lr:0.010000
+[ Sun Apr 22 09:19:01 2018 ] 	Batch(1700/1879) done. Loss: 3.3904  lr:0.010000
+[ Sun Apr 22 09:20:07 2018 ] 	Batch(1800/1879) done. Loss: 3.1836  lr:0.010000
+[ Sun Apr 22 09:20:13 2018 ] 	Mean training loss: 3.3435.
+[ Sun Apr 22 09:20:13 2018 ] 	Time consumption: [Data]69%, [Network]10%
+[ Sun Apr 22 09:20:13 2018 ] Training epoch: 47
+[ Sun Apr 22 09:21:27 2018 ] 	Batch(0/1879) done. Loss: 3.5309  lr:0.010000
+[ Sun Apr 22 09:22:22 2018 ] 	Batch(100/1879) done. Loss: 3.1719  lr:0.010000
+[ Sun Apr 22 09:23:44 2018 ] 	Batch(200/1879) done. Loss: 3.4200  lr:0.010000
+[ Sun Apr 22 09:24:50 2018 ] 	Batch(300/1879) done. Loss: 3.1548  lr:0.010000
+[ Sun Apr 22 09:25:28 2018 ] 	Batch(400/1879) done. Loss: 3.5174  lr:0.010000
+[ Sun Apr 22 09:27:03 2018 ] 	Batch(500/1879) done. Loss: 3.4745  lr:0.010000
+[ Sun Apr 22 09:28:03 2018 ] 	Batch(600/1879) done. Loss: 3.0748  lr:0.010000
+[ Sun Apr 22 09:29:13 2018 ] 	Batch(700/1879) done. Loss: 3.1755  lr:0.010000
+[ Sun Apr 22 09:30:14 2018 ] 	Batch(800/1879) done. Loss: 3.3309  lr:0.010000
+[ Sun Apr 22 09:30:59 2018 ] 	Batch(900/1879) done. Loss: 3.4083  lr:0.010000
+[ Sun Apr 22 09:32:11 2018 ] 	Batch(1000/1879) done. Loss: 3.3690  lr:0.010000
+[ Sun Apr 22 09:33:20 2018 ] 	Batch(1100/1879) done. Loss: 3.3919  lr:0.010000
+[ Sun Apr 22 09:34:18 2018 ] 	Batch(1200/1879) done. Loss: 3.7127  lr:0.010000
+[ Sun Apr 22 09:35:53 2018 ] 	Batch(1300/1879) done. Loss: 3.3538  lr:0.010000
+[ Sun Apr 22 09:37:04 2018 ] 	Batch(1400/1879) done. Loss: 3.3067  lr:0.010000
+[ Sun Apr 22 09:37:59 2018 ] 	Batch(1500/1879) done. Loss: 3.3127  lr:0.010000
+[ Sun Apr 22 09:38:44 2018 ] 	Batch(1600/1879) done. Loss: 3.1972  lr:0.010000
+[ Sun Apr 22 09:39:58 2018 ] 	Batch(1700/1879) done. Loss: 3.5796  lr:0.010000
+[ Sun Apr 22 09:40:29 2018 ] 	Batch(1800/1879) done. Loss: 3.5160  lr:0.010000
+[ Sun Apr 22 09:40:39 2018 ] 	Mean training loss: 3.3414.
+[ Sun Apr 22 09:40:39 2018 ] 	Time consumption: [Data]81%, [Network]10%
+[ Sun Apr 22 09:40:39 2018 ] Training epoch: 48
+[ Sun Apr 22 09:41:48 2018 ] 	Batch(0/1879) done. Loss: 3.2425  lr:0.010000
+[ Sun Apr 22 09:42:44 2018 ] 	Batch(100/1879) done. Loss: 3.2833  lr:0.010000
+[ Sun Apr 22 09:43:33 2018 ] 	Batch(200/1879) done. Loss: 3.2808  lr:0.010000
+[ Sun Apr 22 09:44:38 2018 ] 	Batch(300/1879) done. Loss: 3.2356  lr:0.010000
+[ Sun Apr 22 09:45:48 2018 ] 	Batch(400/1879) done. Loss: 3.1477  lr:0.010000
+[ Sun Apr 22 09:47:02 2018 ] 	Batch(500/1879) done. Loss: 3.1858  lr:0.010000
+[ Sun Apr 22 09:48:30 2018 ] 	Batch(600/1879) done. Loss: 3.2634  lr:0.010000
+[ Sun Apr 22 09:48:58 2018 ] 	Batch(700/1879) done. Loss: 3.0683  lr:0.010000
+[ Sun Apr 22 09:50:44 2018 ] 	Batch(800/1879) done. Loss: 3.4764  lr:0.010000
+[ Sun Apr 22 09:51:27 2018 ] 	Batch(900/1879) done. Loss: 3.4274  lr:0.010000
+[ Sun Apr 22 09:53:24 2018 ] 	Batch(1000/1879) done. Loss: 3.0805  lr:0.010000
+[ Sun Apr 22 09:53:59 2018 ] 	Batch(1100/1879) done. Loss: 3.6518  lr:0.010000
+[ Sun Apr 22 09:54:31 2018 ] 	Batch(1200/1879) done. Loss: 3.3980  lr:0.010000
+[ Sun Apr 22 09:56:17 2018 ] 	Batch(1300/1879) done. Loss: 3.3829  lr:0.010000
+[ Sun Apr 22 09:57:27 2018 ] 	Batch(1400/1879) done. Loss: 3.2682  lr:0.010000
+[ Sun Apr 22 09:58:14 2018 ] 	Batch(1500/1879) done. Loss: 3.3161  lr:0.010000
+[ Sun Apr 22 09:59:46 2018 ] 	Batch(1600/1879) done. Loss: 3.6140  lr:0.010000
+[ Sun Apr 22 10:00:34 2018 ] 	Batch(1700/1879) done. Loss: 3.5856  lr:0.010000
+[ Sun Apr 22 10:00:43 2018 ] 	Batch(1800/1879) done. Loss: 3.3823  lr:0.010000
+[ Sun Apr 22 10:00:50 2018 ] 	Mean training loss: 3.3363.
+[ Sun Apr 22 10:00:50 2018 ] 	Time consumption: [Data]81%, [Network]10%
+[ Sun Apr 22 10:00:50 2018 ] Training epoch: 49
+[ Sun Apr 22 10:02:04 2018 ] 	Batch(0/1879) done. Loss: 3.3304  lr:0.010000
+[ Sun Apr 22 10:03:39 2018 ] 	Batch(100/1879) done. Loss: 3.3629  lr:0.010000
+[ Sun Apr 22 10:03:47 2018 ] 	Batch(200/1879) done. Loss: 3.1414  lr:0.010000
+[ Sun Apr 22 10:05:12 2018 ] 	Batch(300/1879) done. Loss: 3.2861  lr:0.010000
+[ Sun Apr 22 10:07:11 2018 ] 	Batch(400/1879) done. Loss: 3.2012  lr:0.010000
+[ Sun Apr 22 10:08:06 2018 ] 	Batch(500/1879) done. Loss: 3.5009  lr:0.010000
+[ Sun Apr 22 10:08:14 2018 ] 	Batch(600/1879) done. Loss: 3.4072  lr:0.010000
+[ Sun Apr 22 10:09:49 2018 ] 	Batch(700/1879) done. Loss: 3.0470  lr:0.010000
+[ Sun Apr 22 10:10:52 2018 ] 	Batch(800/1879) done. Loss: 3.4533  lr:0.010000
+[ Sun Apr 22 10:12:25 2018 ] 	Batch(900/1879) done. Loss: 3.4087  lr:0.010000
+[ Sun Apr 22 10:13:35 2018 ] 	Batch(1000/1879) done. Loss: 3.3315  lr:0.010000
+[ Sun Apr 22 10:13:43 2018 ] 	Batch(1100/1879) done. Loss: 2.8886  lr:0.010000
+[ Sun Apr 22 10:15:59 2018 ] 	Batch(1200/1879) done. Loss: 3.2929  lr:0.010000
+[ Sun Apr 22 10:16:19 2018 ] 	Batch(1300/1879) done. Loss: 3.1226  lr:0.010000
+[ Sun Apr 22 10:17:52 2018 ] 	Batch(1400/1879) done. Loss: 3.2199  lr:0.010000
+[ Sun Apr 22 10:19:01 2018 ] 	Batch(1500/1879) done. Loss: 3.3571  lr:0.010000
+[ Sun Apr 22 10:19:09 2018 ] 	Batch(1600/1879) done. Loss: 3.2270  lr:0.010000
+[ Sun Apr 22 10:21:00 2018 ] 	Batch(1700/1879) done. Loss: 3.7667  lr:0.010000
+[ Sun Apr 22 10:21:18 2018 ] 	Batch(1800/1879) done. Loss: 3.0820  lr:0.010000
+[ Sun Apr 22 10:21:26 2018 ] 	Mean training loss: 3.3322.
+[ Sun Apr 22 10:21:26 2018 ] 	Time consumption: [Data]64%, [Network]10%
+[ Sun Apr 22 10:21:26 2018 ] Training epoch: 50
+[ Sun Apr 22 10:22:39 2018 ] 	Batch(0/1879) done. Loss: 3.2167  lr:0.010000
+[ Sun Apr 22 10:23:33 2018 ] 	Batch(100/1879) done. Loss: 3.0547  lr:0.010000
+[ Sun Apr 22 10:24:57 2018 ] 	Batch(200/1879) done. Loss: 3.5633  lr:0.010000
+[ Sun Apr 22 10:26:24 2018 ] 	Batch(300/1879) done. Loss: 3.4970  lr:0.010000
+[ Sun Apr 22 10:26:59 2018 ] 	Batch(400/1879) done. Loss: 3.1362  lr:0.010000
+[ Sun Apr 22 10:28:21 2018 ] 	Batch(500/1879) done. Loss: 3.3300  lr:0.010000
+[ Sun Apr 22 10:29:35 2018 ] 	Batch(600/1879) done. Loss: 3.5778  lr:0.010000
+[ Sun Apr 22 10:30:32 2018 ] 	Batch(700/1879) done. Loss: 3.7108  lr:0.010000
+[ Sun Apr 22 10:32:04 2018 ] 	Batch(800/1879) done. Loss: 3.1600  lr:0.010000
+[ Sun Apr 22 10:32:57 2018 ] 	Batch(900/1879) done. Loss: 3.0338  lr:0.010000
+[ Sun Apr 22 10:34:02 2018 ] 	Batch(1000/1879) done. Loss: 3.0333  lr:0.010000
+[ Sun Apr 22 10:34:53 2018 ] 	Batch(1100/1879) done. Loss: 3.4392  lr:0.010000
+[ Sun Apr 22 10:36:16 2018 ] 	Batch(1200/1879) done. Loss: 3.5368  lr:0.010000
+[ Sun Apr 22 10:37:13 2018 ] 	Batch(1300/1879) done. Loss: 3.2104  lr:0.010000
+[ Sun Apr 22 10:38:20 2018 ] 	Batch(1400/1879) done. Loss: 3.2322  lr:0.010000
+[ Sun Apr 22 10:39:35 2018 ] 	Batch(1500/1879) done. Loss: 3.6727  lr:0.010000
+[ Sun Apr 22 10:40:37 2018 ] 	Batch(1600/1879) done. Loss: 3.1758  lr:0.010000
+[ Sun Apr 22 10:41:29 2018 ] 	Batch(1700/1879) done. Loss: 3.3881  lr:0.010000
+[ Sun Apr 22 10:42:00 2018 ] 	Batch(1800/1879) done. Loss: 3.4480  lr:0.010000
+[ Sun Apr 22 10:42:09 2018 ] 	Mean training loss: 3.3276.
+[ Sun Apr 22 10:42:09 2018 ] 	Time consumption: [Data]78%, [Network]10%
+[ Sun Apr 22 10:42:09 2018 ] Eval epoch: 50
+[ Sun Apr 22 10:43:32 2018 ] 	Mean test loss of 155 batches: 3.816550427098428.
+[ Sun Apr 22 10:43:33 2018 ] 	Top1: 21.27%
+[ Sun Apr 22 10:43:33 2018 ] 	Top5: 42.64%
+[ Sun Apr 22 10:43:33 2018 ] Training epoch: 51
+[ Sun Apr 22 10:45:17 2018 ] 	Batch(0/1879) done. Loss: 2.9946  lr:0.010000
+[ Sun Apr 22 10:46:07 2018 ] 	Batch(100/1879) done. Loss: 3.0563  lr:0.010000
+[ Sun Apr 22 10:47:21 2018 ] 	Batch(200/1879) done. Loss: 3.5112  lr:0.010000
+[ Sun Apr 22 10:47:29 2018 ] 	Batch(300/1879) done. Loss: 2.9325  lr:0.010000
+[ Sun Apr 22 10:49:14 2018 ] 	Batch(400/1879) done. Loss: 3.3610  lr:0.010000
+[ Sun Apr 22 10:50:10 2018 ] 	Batch(500/1879) done. Loss: 3.1581  lr:0.010000
+[ Sun Apr 22 10:50:57 2018 ] 	Batch(600/1879) done. Loss: 3.0701  lr:0.010000
+[ Sun Apr 22 10:52:07 2018 ] 	Batch(700/1879) done. Loss: 3.4938  lr:0.010000
+[ Sun Apr 22 10:53:46 2018 ] 	Batch(800/1879) done. Loss: 3.5144  lr:0.010000
+[ Sun Apr 22 10:54:33 2018 ] 	Batch(900/1879) done. Loss: 3.6302  lr:0.010000
+[ Sun Apr 22 10:56:27 2018 ] 	Batch(1000/1879) done. Loss: 3.0244  lr:0.010000
+[ Sun Apr 22 10:57:23 2018 ] 	Batch(1100/1879) done. Loss: 3.4390  lr:0.010000
+[ Sun Apr 22 10:58:24 2018 ] 	Batch(1200/1879) done. Loss: 3.0818  lr:0.010000
+[ Sun Apr 22 10:58:36 2018 ] 	Batch(1300/1879) done. Loss: 3.6883  lr:0.010000
+[ Sun Apr 22 11:00:49 2018 ] 	Batch(1400/1879) done. Loss: 3.3840  lr:0.010000
+[ Sun Apr 22 11:01:26 2018 ] 	Batch(1500/1879) done. Loss: 3.4358  lr:0.010000
+[ Sun Apr 22 11:02:52 2018 ] 	Batch(1600/1879) done. Loss: 3.3912  lr:0.010000
+[ Sun Apr 22 11:03:24 2018 ] 	Batch(1700/1879) done. Loss: 3.2106  lr:0.010000
+[ Sun Apr 22 11:04:12 2018 ] 	Batch(1800/1879) done. Loss: 3.2474  lr:0.010000
+[ Sun Apr 22 11:04:18 2018 ] 	Mean training loss: 3.3219.
+[ Sun Apr 22 11:04:18 2018 ] 	Time consumption: [Data]72%, [Network]10%
+[ Sun Apr 22 11:04:18 2018 ] Training epoch: 52
+[ Sun Apr 22 11:05:16 2018 ] 	Batch(0/1879) done. Loss: 3.1260  lr:0.010000
+[ Sun Apr 22 11:06:17 2018 ] 	Batch(100/1879) done. Loss: 3.3122  lr:0.010000
+[ Sun Apr 22 11:07:32 2018 ] 	Batch(200/1879) done. Loss: 3.2969  lr:0.010000
+[ Sun Apr 22 11:07:41 2018 ] 	Batch(300/1879) done. Loss: 3.0036  lr:0.010000
+[ Sun Apr 22 11:09:35 2018 ] 	Batch(400/1879) done. Loss: 3.4373  lr:0.010000
+[ Sun Apr 22 11:10:30 2018 ] 	Batch(500/1879) done. Loss: 3.2844  lr:0.010000
+[ Sun Apr 22 11:12:08 2018 ] 	Batch(600/1879) done. Loss: 3.4556  lr:0.010000
+[ Sun Apr 22 11:13:00 2018 ] 	Batch(700/1879) done. Loss: 3.0066  lr:0.010000
+[ Sun Apr 22 11:14:02 2018 ] 	Batch(800/1879) done. Loss: 3.3511  lr:0.010000
+[ Sun Apr 22 11:15:41 2018 ] 	Batch(900/1879) done. Loss: 3.2906  lr:0.010000
+[ Sun Apr 22 11:16:21 2018 ] 	Batch(1000/1879) done. Loss: 3.0795  lr:0.010000
+[ Sun Apr 22 11:17:50 2018 ] 	Batch(1100/1879) done. Loss: 3.5263  lr:0.010000
+[ Sun Apr 22 11:18:23 2018 ] 	Batch(1200/1879) done. Loss: 3.1013  lr:0.010000
+[ Sun Apr 22 11:19:18 2018 ] 	Batch(1300/1879) done. Loss: 3.3236  lr:0.010000
+[ Sun Apr 22 11:20:39 2018 ] 	Batch(1400/1879) done. Loss: 3.0055  lr:0.010000
+[ Sun Apr 22 11:21:30 2018 ] 	Batch(1500/1879) done. Loss: 3.3707  lr:0.010000
+[ Sun Apr 22 11:23:03 2018 ] 	Batch(1600/1879) done. Loss: 3.0585  lr:0.010000
+[ Sun Apr 22 11:23:59 2018 ] 	Batch(1700/1879) done. Loss: 3.2231  lr:0.010000
+[ Sun Apr 22 11:24:25 2018 ] 	Batch(1800/1879) done. Loss: 3.2213  lr:0.010000
+[ Sun Apr 22 11:24:31 2018 ] 	Mean training loss: 3.3158.
+[ Sun Apr 22 11:24:31 2018 ] 	Time consumption: [Data]82%, [Network]10%
+[ Sun Apr 22 11:24:31 2018 ] Training epoch: 53
+[ Sun Apr 22 11:25:27 2018 ] 	Batch(0/1879) done. Loss: 3.1191  lr:0.010000
+[ Sun Apr 22 11:26:13 2018 ] 	Batch(100/1879) done. Loss: 2.9993  lr:0.010000
+[ Sun Apr 22 11:27:47 2018 ] 	Batch(200/1879) done. Loss: 3.4727  lr:0.010000
+[ Sun Apr 22 11:28:10 2018 ] 	Batch(300/1879) done. Loss: 2.9235  lr:0.010000
+[ Sun Apr 22 11:29:53 2018 ] 	Batch(400/1879) done. Loss: 3.4892  lr:0.010000
+[ Sun Apr 22 11:30:42 2018 ] 	Batch(500/1879) done. Loss: 3.0658  lr:0.010000
+[ Sun Apr 22 11:31:20 2018 ] 	Batch(600/1879) done. Loss: 3.3078  lr:0.010000
+[ Sun Apr 22 11:32:46 2018 ] 	Batch(700/1879) done. Loss: 3.2356  lr:0.010000
+[ Sun Apr 22 11:33:46 2018 ] 	Batch(800/1879) done. Loss: 3.3725  lr:0.010000
+[ Sun Apr 22 11:35:02 2018 ] 	Batch(900/1879) done. Loss: 3.0814  lr:0.010000
+[ Sun Apr 22 11:36:36 2018 ] 	Batch(1000/1879) done. Loss: 3.2420  lr:0.010000
+[ Sun Apr 22 11:36:59 2018 ] 	Batch(1100/1879) done. Loss: 3.2360  lr:0.010000
+[ Sun Apr 22 11:38:02 2018 ] 	Batch(1200/1879) done. Loss: 3.4503  lr:0.010000
+[ Sun Apr 22 11:39:20 2018 ] 	Batch(1300/1879) done. Loss: 3.3115  lr:0.010000
+[ Sun Apr 22 11:41:05 2018 ] 	Batch(1400/1879) done. Loss: 3.1782  lr:0.010000
+[ Sun Apr 22 11:41:31 2018 ] 	Batch(1500/1879) done. Loss: 3.4567  lr:0.010000
+[ Sun Apr 22 11:42:46 2018 ] 	Batch(1600/1879) done. Loss: 3.2525  lr:0.010000
+[ Sun Apr 22 11:43:58 2018 ] 	Batch(1700/1879) done. Loss: 3.1425  lr:0.010000
+[ Sun Apr 22 11:44:25 2018 ] 	Batch(1800/1879) done. Loss: 3.4292  lr:0.010000
+[ Sun Apr 22 11:44:31 2018 ] 	Mean training loss: 3.3174.
+[ Sun Apr 22 11:44:31 2018 ] 	Time consumption: [Data]77%, [Network]10%
+[ Sun Apr 22 11:44:31 2018 ] Training epoch: 54
+[ Sun Apr 22 11:45:42 2018 ] 	Batch(0/1879) done. Loss: 3.1790  lr:0.010000
+[ Sun Apr 22 11:46:47 2018 ] 	Batch(100/1879) done. Loss: 3.5538  lr:0.010000
+[ Sun Apr 22 11:47:14 2018 ] 	Batch(200/1879) done. Loss: 3.2844  lr:0.010000
+[ Sun Apr 22 11:48:21 2018 ] 	Batch(300/1879) done. Loss: 3.1837  lr:0.010000
+[ Sun Apr 22 11:49:36 2018 ] 	Batch(400/1879) done. Loss: 3.2393  lr:0.010000
+[ Sun Apr 22 11:50:26 2018 ] 	Batch(500/1879) done. Loss: 3.4319  lr:0.010000
+[ Sun Apr 22 11:51:33 2018 ] 	Batch(600/1879) done. Loss: 3.0612  lr:0.010000
+[ Sun Apr 22 11:53:33 2018 ] 	Batch(700/1879) done. Loss: 3.4321  lr:0.010000
+[ Sun Apr 22 11:54:01 2018 ] 	Batch(800/1879) done. Loss: 3.5980  lr:0.010000
+[ Sun Apr 22 11:54:18 2018 ] 	Batch(900/1879) done. Loss: 3.3224  lr:0.010000
+[ Sun Apr 22 11:56:17 2018 ] 	Batch(1000/1879) done. Loss: 3.3890  lr:0.010000
+[ Sun Apr 22 11:57:13 2018 ] 	Batch(1100/1879) done. Loss: 3.4391  lr:0.010000
+[ Sun Apr 22 11:58:30 2018 ] 	Batch(1200/1879) done. Loss: 3.2164  lr:0.010000
+[ Sun Apr 22 11:58:48 2018 ] 	Batch(1300/1879) done. Loss: 3.4729  lr:0.010000
+[ Sun Apr 22 12:01:08 2018 ] 	Batch(1400/1879) done. Loss: 3.2508  lr:0.010000
+[ Sun Apr 22 12:01:44 2018 ] 	Batch(1500/1879) done. Loss: 3.2478  lr:0.010000
+[ Sun Apr 22 12:02:31 2018 ] 	Batch(1600/1879) done. Loss: 3.5344  lr:0.010000
+[ Sun Apr 22 12:03:41 2018 ] 	Batch(1700/1879) done. Loss: 3.3416  lr:0.010000
+[ Sun Apr 22 12:04:20 2018 ] 	Batch(1800/1879) done. Loss: 3.3311  lr:0.010000
+[ Sun Apr 22 12:04:31 2018 ] 	Mean training loss: 3.3093.
+[ Sun Apr 22 12:04:31 2018 ] 	Time consumption: [Data]77%, [Network]10%
+[ Sun Apr 22 12:04:31 2018 ] Training epoch: 55
+[ Sun Apr 22 12:05:26 2018 ] 	Batch(0/1879) done. Loss: 3.3235  lr:0.010000
+[ Sun Apr 22 12:07:04 2018 ] 	Batch(100/1879) done. Loss: 3.3675  lr:0.010000
+[ Sun Apr 22 12:07:29 2018 ] 	Batch(200/1879) done. Loss: 2.7816  lr:0.010000
+[ Sun Apr 22 12:08:25 2018 ] 	Batch(300/1879) done. Loss: 3.3194  lr:0.010000
+[ Sun Apr 22 12:09:20 2018 ] 	Batch(400/1879) done. Loss: 3.5918  lr:0.010000
+[ Sun Apr 22 12:10:12 2018 ] 	Batch(500/1879) done. Loss: 3.3455  lr:0.010000
+[ Sun Apr 22 12:11:45 2018 ] 	Batch(600/1879) done. Loss: 3.3428  lr:0.010000
+[ Sun Apr 22 12:12:50 2018 ] 	Batch(700/1879) done. Loss: 3.1139  lr:0.010000
+[ Sun Apr 22 12:13:48 2018 ] 	Batch(800/1879) done. Loss: 3.5869  lr:0.010000
+[ Sun Apr 22 12:14:50 2018 ] 	Batch(900/1879) done. Loss: 3.2424  lr:0.010000
+[ Sun Apr 22 12:17:35 2018 ] 	Batch(1000/1879) done. Loss: 3.3893  lr:0.010000
+[ Sun Apr 22 12:17:55 2018 ] 	Batch(1100/1879) done. Loss: 3.2925  lr:0.010000
+[ Sun Apr 22 12:18:40 2018 ] 	Batch(1200/1879) done. Loss: 3.1393  lr:0.010000
+[ Sun Apr 22 12:19:47 2018 ] 	Batch(1300/1879) done. Loss: 3.3185  lr:0.010000
+[ Sun Apr 22 12:20:55 2018 ] 	Batch(1400/1879) done. Loss: 3.4384  lr:0.010000
+[ Sun Apr 22 12:21:50 2018 ] 	Batch(1500/1879) done. Loss: 3.2393  lr:0.010000
+[ Sun Apr 22 12:23:06 2018 ] 	Batch(1600/1879) done. Loss: 3.2579  lr:0.010000
+[ Sun Apr 22 12:23:58 2018 ] 	Batch(1700/1879) done. Loss: 3.2783  lr:0.010000
+[ Sun Apr 22 12:25:02 2018 ] 	Batch(1800/1879) done. Loss: 3.3434  lr:0.010000
+[ Sun Apr 22 12:25:08 2018 ] 	Mean training loss: 3.3085.
+[ Sun Apr 22 12:25:08 2018 ] 	Time consumption: [Data]88%, [Network]10%
+[ Sun Apr 22 12:25:08 2018 ] Eval epoch: 55
+[ Sun Apr 22 12:26:32 2018 ] 	Mean test loss of 155 batches: 3.8144745057629.
+[ Sun Apr 22 12:26:33 2018 ] 	Top1: 21.45%
+[ Sun Apr 22 12:26:33 2018 ] 	Top5: 42.51%
+[ Sun Apr 22 12:26:33 2018 ] Training epoch: 56
+[ Sun Apr 22 12:27:55 2018 ] 	Batch(0/1879) done. Loss: 3.0645  lr:0.010000
+[ Sun Apr 22 12:28:29 2018 ] 	Batch(100/1879) done. Loss: 3.2256  lr:0.010000
+[ Sun Apr 22 12:29:36 2018 ] 	Batch(200/1879) done. Loss: 3.1793  lr:0.010000
+[ Sun Apr 22 12:30:47 2018 ] 	Batch(300/1879) done. Loss: 3.2711  lr:0.010000
+[ Sun Apr 22 12:31:59 2018 ] 	Batch(400/1879) done. Loss: 3.6021  lr:0.010000
+[ Sun Apr 22 12:33:09 2018 ] 	Batch(500/1879) done. Loss: 3.1741  lr:0.010000
+[ Sun Apr 22 12:34:11 2018 ] 	Batch(600/1879) done. Loss: 3.1992  lr:0.010000
+[ Sun Apr 22 12:35:21 2018 ] 	Batch(700/1879) done. Loss: 3.3325  lr:0.010000
+[ Sun Apr 22 12:36:29 2018 ] 	Batch(800/1879) done. Loss: 3.4537  lr:0.010000
+[ Sun Apr 22 12:37:42 2018 ] 	Batch(900/1879) done. Loss: 3.4900  lr:0.010000
+[ Sun Apr 22 12:38:50 2018 ] 	Batch(1000/1879) done. Loss: 3.1451  lr:0.010000
+[ Sun Apr 22 12:40:01 2018 ] 	Batch(1100/1879) done. Loss: 3.6479  lr:0.010000
+[ Sun Apr 22 12:41:08 2018 ] 	Batch(1200/1879) done. Loss: 3.4583  lr:0.010000
+[ Sun Apr 22 12:42:22 2018 ] 	Batch(1300/1879) done. Loss: 3.1845  lr:0.010000
+[ Sun Apr 22 12:43:29 2018 ] 	Batch(1400/1879) done. Loss: 3.1365  lr:0.010000
+[ Sun Apr 22 12:44:41 2018 ] 	Batch(1500/1879) done. Loss: 3.3202  lr:0.010000
+[ Sun Apr 22 12:45:55 2018 ] 	Batch(1600/1879) done. Loss: 3.4841  lr:0.010000
+[ Sun Apr 22 12:46:50 2018 ] 	Batch(1700/1879) done. Loss: 3.1833  lr:0.010000
+[ Sun Apr 22 12:47:49 2018 ] 	Batch(1800/1879) done. Loss: 3.2235  lr:0.010000
+[ Sun Apr 22 12:47:58 2018 ] 	Mean training loss: 3.3042.
+[ Sun Apr 22 12:47:58 2018 ] 	Time consumption: [Data]89%, [Network]10%
+[ Sun Apr 22 12:47:58 2018 ] Training epoch: 57
+[ Sun Apr 22 12:49:03 2018 ] 	Batch(0/1879) done. Loss: 3.2944  lr:0.010000
+[ Sun Apr 22 12:49:57 2018 ] 	Batch(100/1879) done. Loss: 2.9898  lr:0.010000
+[ Sun Apr 22 12:51:01 2018 ] 	Batch(200/1879) done. Loss: 3.7310  lr:0.010000
+[ Sun Apr 22 12:53:13 2018 ] 	Batch(300/1879) done. Loss: 3.2156  lr:0.010000
+[ Sun Apr 22 12:53:23 2018 ] 	Batch(400/1879) done. Loss: 3.2193  lr:0.010000
+[ Sun Apr 22 12:53:32 2018 ] 	Batch(500/1879) done. Loss: 3.0629  lr:0.010000
+[ Sun Apr 22 12:55:46 2018 ] 	Batch(600/1879) done. Loss: 3.3444  lr:0.010000
+[ Sun Apr 22 12:56:46 2018 ] 	Batch(700/1879) done. Loss: 3.5795  lr:0.010000
+[ Sun Apr 22 12:57:24 2018 ] 	Batch(800/1879) done. Loss: 3.0332  lr:0.010000
+[ Sun Apr 22 12:59:01 2018 ] 	Batch(900/1879) done. Loss: 3.1776  lr:0.010000
+[ Sun Apr 22 12:59:36 2018 ] 	Batch(1000/1879) done. Loss: 2.9872  lr:0.010000
+[ Sun Apr 22 13:00:38 2018 ] 	Batch(1100/1879) done. Loss: 3.3220  lr:0.010000
+[ Sun Apr 22 13:01:45 2018 ] 	Batch(1200/1879) done. Loss: 3.3030  lr:0.010000
+[ Sun Apr 22 13:02:55 2018 ] 	Batch(1300/1879) done. Loss: 3.2380  lr:0.010000
+[ Sun Apr 22 13:04:08 2018 ] 	Batch(1400/1879) done. Loss: 3.4694  lr:0.010000
+[ Sun Apr 22 13:05:14 2018 ] 	Batch(1500/1879) done. Loss: 3.2044  lr:0.010000
+[ Sun Apr 22 13:06:17 2018 ] 	Batch(1600/1879) done. Loss: 3.5022  lr:0.010000
+[ Sun Apr 22 13:07:46 2018 ] 	Batch(1700/1879) done. Loss: 3.4503  lr:0.010000
+[ Sun Apr 22 13:08:19 2018 ] 	Batch(1800/1879) done. Loss: 3.2330  lr:0.010000
+[ Sun Apr 22 13:08:27 2018 ] 	Mean training loss: 3.3016.
+[ Sun Apr 22 13:08:27 2018 ] 	Time consumption: [Data]83%, [Network]10%
+[ Sun Apr 22 13:08:27 2018 ] Training epoch: 58
+[ Sun Apr 22 13:09:27 2018 ] 	Batch(0/1879) done. Loss: 2.9151  lr:0.010000
+[ Sun Apr 22 13:10:52 2018 ] 	Batch(100/1879) done. Loss: 3.2367  lr:0.010000
+[ Sun Apr 22 13:11:46 2018 ] 	Batch(200/1879) done. Loss: 3.0885  lr:0.010000
+[ Sun Apr 22 13:12:16 2018 ] 	Batch(300/1879) done. Loss: 3.2749  lr:0.010000
+[ Sun Apr 22 13:13:12 2018 ] 	Batch(400/1879) done. Loss: 3.5287  lr:0.010000
+[ Sun Apr 22 13:14:12 2018 ] 	Batch(500/1879) done. Loss: 3.3338  lr:0.010000
+[ Sun Apr 22 13:15:21 2018 ] 	Batch(600/1879) done. Loss: 3.5793  lr:0.010000
+[ Sun Apr 22 13:17:21 2018 ] 	Batch(700/1879) done. Loss: 3.0085  lr:0.010000
+[ Sun Apr 22 13:18:17 2018 ] 	Batch(800/1879) done. Loss: 3.4970  lr:0.010000
+[ Sun Apr 22 13:18:40 2018 ] 	Batch(900/1879) done. Loss: 3.3986  lr:0.010000
+[ Sun Apr 22 13:19:57 2018 ] 	Batch(1000/1879) done. Loss: 3.4068  lr:0.010000
+[ Sun Apr 22 13:20:55 2018 ] 	Batch(1100/1879) done. Loss: 3.3356  lr:0.010000
+[ Sun Apr 22 13:22:08 2018 ] 	Batch(1200/1879) done. Loss: 3.2868  lr:0.010000
+[ Sun Apr 22 13:23:15 2018 ] 	Batch(1300/1879) done. Loss: 3.4545  lr:0.010000
+[ Sun Apr 22 13:24:30 2018 ] 	Batch(1400/1879) done. Loss: 3.1074  lr:0.010000
+[ Sun Apr 22 13:26:41 2018 ] 	Batch(1500/1879) done. Loss: 3.3408  lr:0.010000
+[ Sun Apr 22 13:27:59 2018 ] 	Batch(1600/1879) done. Loss: 3.0631  lr:0.010000
+[ Sun Apr 22 13:28:06 2018 ] 	Batch(1700/1879) done. Loss: 3.7398  lr:0.010000
+[ Sun Apr 22 13:28:48 2018 ] 	Batch(1800/1879) done. Loss: 3.0726  lr:0.010000
+[ Sun Apr 22 13:28:55 2018 ] 	Mean training loss: 3.2975.
+[ Sun Apr 22 13:28:55 2018 ] 	Time consumption: [Data]89%, [Network]10%
+[ Sun Apr 22 13:28:55 2018 ] Training epoch: 59
+[ Sun Apr 22 13:30:08 2018 ] 	Batch(0/1879) done. Loss: 3.3976  lr:0.010000
+[ Sun Apr 22 13:30:41 2018 ] 	Batch(100/1879) done. Loss: 3.0275  lr:0.010000
+[ Sun Apr 22 13:32:24 2018 ] 	Batch(200/1879) done. Loss: 3.1182  lr:0.010000
+[ Sun Apr 22 13:33:14 2018 ] 	Batch(300/1879) done. Loss: 2.7442  lr:0.010000
+[ Sun Apr 22 13:34:17 2018 ] 	Batch(400/1879) done. Loss: 3.1254  lr:0.010000
+[ Sun Apr 22 13:35:37 2018 ] 	Batch(500/1879) done. Loss: 3.5875  lr:0.010000
+[ Sun Apr 22 13:36:41 2018 ] 	Batch(600/1879) done. Loss: 3.2802  lr:0.010000
+[ Sun Apr 22 13:36:49 2018 ] 	Batch(700/1879) done. Loss: 3.0050  lr:0.010000
+[ Sun Apr 22 13:39:36 2018 ] 	Batch(800/1879) done. Loss: 3.3335  lr:0.010000
+[ Sun Apr 22 13:39:44 2018 ] 	Batch(900/1879) done. Loss: 3.3422  lr:0.010000
+[ Sun Apr 22 13:41:11 2018 ] 	Batch(1000/1879) done. Loss: 3.2533  lr:0.010000
+[ Sun Apr 22 13:41:20 2018 ] 	Batch(1100/1879) done. Loss: 3.2816  lr:0.010000
+[ Sun Apr 22 13:43:45 2018 ] 	Batch(1200/1879) done. Loss: 3.5705  lr:0.010000
+[ Sun Apr 22 13:44:21 2018 ] 	Batch(1300/1879) done. Loss: 3.2630  lr:0.010000
+[ Sun Apr 22 13:44:46 2018 ] 	Batch(1400/1879) done. Loss: 3.4004  lr:0.010000
+[ Sun Apr 22 13:46:52 2018 ] 	Batch(1500/1879) done. Loss: 3.4813  lr:0.010000
+[ Sun Apr 22 13:47:40 2018 ] 	Batch(1600/1879) done. Loss: 3.3948  lr:0.010000
+[ Sun Apr 22 13:48:42 2018 ] 	Batch(1700/1879) done. Loss: 3.4074  lr:0.010000
+[ Sun Apr 22 13:49:13 2018 ] 	Batch(1800/1879) done. Loss: 3.4611  lr:0.010000
+[ Sun Apr 22 13:49:19 2018 ] 	Mean training loss: 3.2926.
+[ Sun Apr 22 13:49:19 2018 ] 	Time consumption: [Data]57%, [Network]10%
+[ Sun Apr 22 13:49:19 2018 ] Training epoch: 60
+[ Sun Apr 22 13:50:12 2018 ] 	Batch(0/1879) done. Loss: 3.1821  lr:0.010000
+[ Sun Apr 22 13:51:15 2018 ] 	Batch(100/1879) done. Loss: 3.2448  lr:0.010000
+[ Sun Apr 22 13:52:15 2018 ] 	Batch(200/1879) done. Loss: 3.0128  lr:0.010000
+[ Sun Apr 22 13:53:08 2018 ] 	Batch(300/1879) done. Loss: 3.3291  lr:0.010000
+[ Sun Apr 22 13:54:00 2018 ] 	Batch(400/1879) done. Loss: 3.3777  lr:0.010000
+[ Sun Apr 22 13:55:29 2018 ] 	Batch(500/1879) done. Loss: 3.5426  lr:0.010000
+[ Sun Apr 22 13:56:36 2018 ] 	Batch(600/1879) done. Loss: 3.3355  lr:0.010000
+[ Sun Apr 22 13:57:56 2018 ] 	Batch(700/1879) done. Loss: 3.3486  lr:0.010000
+[ Sun Apr 22 13:58:04 2018 ] 	Batch(800/1879) done. Loss: 3.2817  lr:0.010000
+[ Sun Apr 22 14:00:44 2018 ] 	Batch(900/1879) done. Loss: 2.9658  lr:0.010000
+[ Sun Apr 22 14:01:14 2018 ] 	Batch(1000/1879) done. Loss: 3.0877  lr:0.010000
+[ Sun Apr 22 14:01:27 2018 ] 	Batch(1100/1879) done. Loss: 3.3076  lr:0.010000
+[ Sun Apr 22 14:03:52 2018 ] 	Batch(1200/1879) done. Loss: 3.4335  lr:0.010000
+[ Sun Apr 22 14:04:24 2018 ] 	Batch(1300/1879) done. Loss: 3.9095  lr:0.010000
+[ Sun Apr 22 14:05:16 2018 ] 	Batch(1400/1879) done. Loss: 2.9672  lr:0.010000
+[ Sun Apr 22 14:06:56 2018 ] 	Batch(1500/1879) done. Loss: 3.3595  lr:0.010000
+[ Sun Apr 22 14:07:55 2018 ] 	Batch(1600/1879) done. Loss: 3.0692  lr:0.010000
+[ Sun Apr 22 14:08:37 2018 ] 	Batch(1700/1879) done. Loss: 3.4365  lr:0.010000
+[ Sun Apr 22 14:09:10 2018 ] 	Batch(1800/1879) done. Loss: 3.2970  lr:0.010000
+[ Sun Apr 22 14:09:18 2018 ] 	Mean training loss: 3.2878.
+[ Sun Apr 22 14:09:18 2018 ] 	Time consumption: [Data]75%, [Network]10%
+[ Sun Apr 22 14:09:18 2018 ] Eval epoch: 60
+[ Sun Apr 22 14:10:41 2018 ] 	Mean test loss of 155 batches: 3.8237273493120747.
+[ Sun Apr 22 14:10:41 2018 ] 	Top1: 21.31%
+[ Sun Apr 22 14:10:42 2018 ] 	Top5: 42.34%

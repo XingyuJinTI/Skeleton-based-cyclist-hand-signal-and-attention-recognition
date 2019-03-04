@@ -1,0 +1,30 @@
+base_lr: 0.1
+batch_size: 64
+config: config/baseline/nturgbd-cross-view/train.yaml
+device: [0]
+eval_interval: 5
+feeder: st_gcn.feeder.Feeder
+ignore_weights: []
+log_interval: 100
+model: st_gcn.net.TCN
+model_args: {channel: 150, num_class: 60, use_data_bn: true, window_size: 300}
+nesterov: true
+num_epoch: 80
+num_worker: 128
+optimizer: SGD
+phase: train
+print_log: true
+save_interval: 10
+save_score: false
+seed: 1
+show_topk: [1, 5]
+start_epoch: 0
+step: [10, 70]
+test_batch_size: 64
+test_feeder_args: {data_path: ./data/NTU-RGB-D/xview/val_data.npy, label_path: ./data/NTU-RGB-D/xview/val_label.pkl,
+  mode: test, window_size: 300}
+train_feeder_args: {data_path: ./data/NTU-RGB-D/xview/train_data.npy, label_path: ./data/NTU-RGB-D/xview/train_label.pkl,
+  mode: train, window_size: 300}
+weight_decay: 0.0001
+weights: null
+work_dir: work_dir/baseline/NTUcrossview

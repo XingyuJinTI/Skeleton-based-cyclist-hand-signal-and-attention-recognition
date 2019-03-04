@@ -1,0 +1,40 @@
+base_lr: 0.1
+batch_size: 64
+config: config/st_gcn/cyclist/train.yaml
+device: [0]
+eval_interval: 5
+feeder: st_gcn.feeder.Feeder_kinetics
+ignore_weights: []
+log_interval: 100
+model: st_gcn.net.ST_GCN
+model_args:
+  channel: 3
+  dropout: 0
+  graph: st_gcn.graph.Kinetics
+  graph_args: {labeling_mode: spatial}
+  mask_learning: true
+  num_class: 3
+  num_person: 2
+  num_point: 18
+  use_data_bn: true
+  window_size: 150
+nesterov: true
+num_epoch: 6000
+num_worker: 128
+optimizer: SGD
+phase: train
+print_log: true
+save_interval: 500
+save_score: false
+seed: 1
+show_topk: [1, 5]
+start_epoch: 0
+step: [2000, 3000, 4000, 5000]
+test_batch_size: 32
+test_feeder_args: {data_path: ./convert-openpose/cyclist_st-gcn_format/test, label_path: ./convert-openpose/cyclist_labels/test.json,
+  mode: test, window_size: 150}
+train_feeder_args: {data_path: ./convert-openpose/cyclist_st-gcn_format/train, label_path: ./convert-openpose/cyclist_labels/train.json,
+  mode: train, random_choose: true, random_move: true, window_size: 150}
+weight_decay: 0.0001
+weights: null
+work_dir: work_dir/cyclist

@@ -1,0 +1,306 @@
+[ Mon May  7 16:28:32 2018 ] Load weights from ./work_dir/cyclist/epoch1500_model.pt.
+[ Mon May  7 16:28:34 2018 ] Model:   st_gcn.net.ST_GCN.
+[ Mon May  7 16:28:34 2018 ] Weights: ./work_dir/cyclist/epoch1500_model.pt.
+[ Mon May  7 16:28:34 2018 ] Eval epoch: 1
+
+----------------
+Result:  
+ 0
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 0
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  0.0
+
+----------------
+Result:  
+ 2
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 2
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  0.0008106231689453125
+
+----------------
+Result:  
+ 0
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 0
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  1.9073486328125e-05
+
+----------------
+Result:  
+ 2
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 2
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  0.364413321018219
+
+----------------
+Result:  
+ 1
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 1
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  0.0005168914794921875
+
+----------------
+Result:  
+ 1
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 1
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  0.005524635314941406
+
+----------------
+Result:  
+ 0
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 0
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  0.0002269744873046875
+
+----------------
+Result:  
+ 2
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 2
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  0.0002951622009277344
+
+----------------
+Result:  
+ 2
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 2
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  0.007271289825439453
+
+----------------
+Result:  
+ 2
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 1
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  2.3120505809783936
+
+----------------
+Result:  
+ 0
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 0
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  6.67572021484375e-06
+
+----------------
+Result:  
+ 0
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 0
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  0.0
+
+----------------
+Result:  
+ 2
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 1
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  2.0519862174987793
+
+----------------
+Result:  
+ 2
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 2
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  0.005635738372802734
+
+----------------
+Result:  
+ 1
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 1
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  0.002124786376953125
+
+----------------
+Result:  
+ 2
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 2
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  0.004014253616333008
+
+----------------
+Result:  
+ 1
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 1
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  0.008677959442138672
+
+----------------
+Result:  
+ 0
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 0
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  0.0
+
+----------------
+Result:  
+ 2
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 2
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  1.9550323486328125e-05
+
+----------------
+Result:  
+ 0
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 0
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  3.3855438232421875e-05
+
+----------------
+Result:  
+ 2
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 2
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  0.0012645721435546875
+
+----------------
+Result:  
+ 1
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 1
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  0.049396514892578125
+
+----------------
+Result:  
+ 1
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 1
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  0.03719973564147949
+
+----------------
+Result:  
+ 0
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 0
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  6.198883056640625e-06
+
+----------------
+Result:  
+ 1
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 1
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  0.17925381660461426
+
+----------------
+Result:  
+ 0
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 0
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  9.5367431640625e-07
+
+----------------
+Result:  
+ 2
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+Label:  Variable containing:
+ 2
+[torch.cuda.LongTensor of size 1 (GPU 0)]
+
+loss:  0.0003223419189453125
+[ Mon May  7 16:28:44 2018 ] 	Mean test loss of 27 batches: 0.18633598972249915.
+[ Mon May  7 16:28:44 2018 ] 	Top1: 92.59%
+[ Mon May  7 16:28:44 2018 ] 	Top5: 100.00%
+[ Mon May  7 16:28:44 2018 ] Done.
+
