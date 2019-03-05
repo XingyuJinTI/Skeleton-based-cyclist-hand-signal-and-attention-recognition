@@ -1,4 +1,4 @@
-# Spatial Temporal Graph Convolutional Networks (ST-GCN)
+# Skeleton based cyclist hand signal and attention recognition using Spatial Temporal Graph Convolutional Networks (ST-GCN)
 
 ## main files
 	'work_dir' - includes the trained model
