@@ -1,6 +1,6 @@
 # Skeleton based cyclist hand signal and attention recognition
 
-The skeleton based behavour recognition algorithm is for autonomous vehicles to identify:
+We developed a skeleton based behavour recognition algorithm and a new Cyclist Behaviour Recognition dataset for **autonomous vehicles** to identify:
 
 - cyclists hand signals/gestures for their intention of next move
 - cyclists' attention/notice, i.e. whether the cyclist notice vehicles beside or behind them
@@ -17,7 +17,7 @@ The pipeline of the algorithm is shown as follow.
 
 <img src="src/stgcn.png" width="850">
 
-### Task and Visualisation
+### Cyclist Behaviour Recognition dataset
 
 3 classes of cyclist behaviours:
 - Looking over shoulder: notice (the vehicle) behind, at the left and at the right
